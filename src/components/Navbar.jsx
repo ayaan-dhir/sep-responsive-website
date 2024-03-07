@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false); // Controls the visibility of the side menu
+  const [nav, setNav] = useState(false);
 
   const handleNav = () => {
-    setNav(!nav); // Toggles the state, which in turn, controls the visibility
+    setNav(!nav);
   };
 
   return (
@@ -20,12 +20,16 @@ const Navbar = () => {
         Sigma Eta Pi
       </h1>
       <ul className="hidden md:flex">
-        <li className="p-4 text-xl">Startups</li>
-        <li className="p-4 text-xl">Members</li>
-        <li className="p-4 text-xl" style={{ whiteSpace: "nowrap" }}>
+        {/* Use Tailwind's responsive padding utilities here */}
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">Startups</li>
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">Members</li>
+        <li
+          className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
+          style={{ whiteSpace: "nowrap" }}
+        >
           Founder's Education
         </li>
-        <li className="p-4 text-xl">Recruitment</li>
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">Recruitment</li>
       </ul>
       <div
         onClick={handleNav}
