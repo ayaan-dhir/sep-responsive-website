@@ -10,7 +10,8 @@ const Navbar = () => {
 
   return (
     <div
-      className="flex justify-between items-center h-24 mx-auto px-6 text-white"
+      data-theme="night"
+      className="flex justify-between items-center h-24 mx-auto px-6"
       style={{ position: "relative", zIndex: 1 }}
     >
       <h1
