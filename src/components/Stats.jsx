@@ -4,30 +4,30 @@ const Stats = () => {
   return (
     <div
       data-theme="night"
-      className="join join-vertical lg:join-horizontal flex items-center justify-center mx-auto h-screen w-full gap-x-20"
+      className="join join-vertical lg:join-horizontal flex items-center justify-center mx-auto h-screen w-full gap-x-20 px-6 gap-y-10"
     >
       <div className="card card-normal w-96 bg-primary text-primary-content text-center">
         <div className="card-body">
-          <h1 className="card-title justify-center md:text-6xl sm:text-3xl">
+          <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
             40+
           </h1>
-          <p className="md:text-3xl sm:text-xl">members</p>
+          <p className="md:text-3xl sm:text-2xl text-xl">members</p>
         </div>
       </div>
       <div className="card card-normal w-96 bg-secondary text-primary-content text-center">
         <div className="card-body">
-          <h1 className="card-title justify-center md:text-6xl sm:text-3xl">
+          <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
             20+
           </h1>
-          <p className="md:text-3xl sm:text-xl">startups</p>
+          <p className="md:text-3xl sm:text-2xl text-xl">startups</p>
         </div>
       </div>
       <div className="card card-normal w-96 bg-accent text-primary-content text-center">
         <div className="card-body">
-          <h1 className="card-title justify-center md:text-6xl sm:text-3xl">
+          <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
             1
           </h1>
-          <p className="md:text-3xl sm:text-xl">family</p>
+          <p className="md:text-3xl sm:text-2xl text-xl">family</p>
         </div>
       </div>
     </div>

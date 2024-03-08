@@ -47,7 +47,7 @@ const Navbar = () => {
         }
         style={{ zIndex: 1 }}
       >
-        <ul className="uppercase pt-6">
+        <ul className="pt-6">
           <li className="p-4">Startups</li>
           <li className="p-4">Members</li>
           <li className="p-4" style={{ whiteSpace: "nowrap" }}>
