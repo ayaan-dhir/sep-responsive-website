@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom"; // Make sure to import Link
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -10,27 +11,34 @@ const Navbar = () => {
 
   return (
     <div
-      data-theme="night"
+      data-theme="forest"
       className="flex justify-between items-center h-24 mx-auto px-6"
       style={{ position: "relative", zIndex: 1 }}
     >
-      <h1
+      {/* Wrap "Sigma Eta Pi" text with Link */}
+      <Link
+        to="/"
         className="w-full text-3xl font-bold text-[white]"
         style={{ whiteSpace: "nowrap" }}
       >
         Sigma Eta Pi
-      </h1>
+      </Link>
       <ul className="hidden md:flex">
-        {/* Use Tailwind's responsive padding utilities here */}
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">Startups</li>
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">Members</li>
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+          <Link to="/startups">Startups</Link>
+        </li>
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+          <Link to="/members">Members</Link>
+        </li>
         <li
           className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
           style={{ whiteSpace: "nowrap" }}
         >
-          Founder's Education
+          <Link to="/founders-education">Founder's Education</Link>
         </li>
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">Recruitment</li>
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+          <Link to="/recruitment">Recruitment</Link>
+        </li>
       </ul>
       <div
         onClick={handleNav}
@@ -48,12 +56,18 @@ const Navbar = () => {
         style={{ zIndex: 1 }}
       >
         <ul className="pt-6">
-          <li className="p-4">Startups</li>
-          <li className="p-4">Members</li>
-          <li className="p-4" style={{ whiteSpace: "nowrap" }}>
-            Founder's Education
+          <li className="p-4">
+            <Link to="/startups">Startups</Link>
           </li>
-          <li className="p-4">Recruitment</li>
+          <li className="p-4">
+            <Link to="/members">Members</Link>
+          </li>
+          <li className="p-4" style={{ whiteSpace: "nowrap" }}>
+            <Link to="/founders-education">Founder's Education</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/recruitment">Recruitment</Link>
+          </li>
         </ul>
       </div>
     </div>

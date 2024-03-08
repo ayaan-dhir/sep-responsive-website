@@ -3,10 +3,10 @@ import React from "react";
 const Stats = () => {
   return (
     <div
-      data-theme="night"
+      data-theme="forest"
       className="join join-vertical lg:join-horizontal flex items-center justify-center mx-auto h-screen w-full gap-x-20 px-6 gap-y-10"
     >
-      <div className="card card-normal w-96 bg-primary text-primary-content text-center">
+      <div className="card card-normal w-64 md:w-96 sm:w-80 bg-accent text-primary-content text-center hover:scale-110 duration-300">
         <div className="card-body">
           <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
             40+
@@ -14,7 +14,7 @@ const Stats = () => {
           <p className="md:text-3xl sm:text-2xl text-xl">members</p>
         </div>
       </div>
-      <div className="card card-normal w-96 bg-secondary text-primary-content text-center">
+      <div className="card card-normal w-64 md:w-96 sm:w-80 bg-accent text-primary-content text-center hover:scale-110 duration-300">
         <div className="card-body">
           <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
             20+
@@ -22,7 +22,7 @@ const Stats = () => {
           <p className="md:text-3xl sm:text-2xl text-xl">startups</p>
         </div>
       </div>
-      <div className="card card-normal w-96 bg-accent text-primary-content text-center">
+      <div className="card card-normal w-64 md:w-96 sm:w-80 bg-accent text-primary-content text-center hover:scale-110 duration-300">
         <div className="card-body">
           <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
             1
