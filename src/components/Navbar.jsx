@@ -19,6 +19,14 @@ const Navbar = () => {
     setIsDropdownOpen(false); // Also close the dropdown when closing the nav
   };
 
+  const showDropdown = () => setIsDropdownOpen(true);
+  const hideDropdown = () => setIsDropdownOpen(false);
+
+  const dropdownOpenStyle = {
+    transform: isDropdownOpen ? "translateY(50px)" : "none",
+    transition: "transform 0.3s ease", // Optional: adds a smooth transition
+  };
+
   return (
     <div
       data-theme="forest"
@@ -37,10 +45,14 @@ const Navbar = () => {
         <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/startups">Startups</Link>
         </li>
-        <li className="relative px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
-          <button onClick={toggleDropdown}>Members</button>
+        <li
+          className="relative px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
+          onMouseEnter={showDropdown}
+          onMouseLeave={hideDropdown}
+        >
+          <button>Members</button>
           {isDropdownOpen && (
-            <div className="text-center absolute left-1/2 transform -translate-x-1/2 mt-2 w-40 text-accent">
+            <div className="text-center absolute left-1/2 transform -translate-x-1/2 w-40 text-accent">
               <ul>
                 <li className="px-4 py-2 hover:bg-accent hover:text-white">
                   <Link to="/members/board" onClick={closeNav}>
@@ -90,14 +102,14 @@ const Navbar = () => {
           <li className="p-4">
             <button onClick={toggleDropdown}>Members</button>
             {isDropdownOpen && (
-              <div className="absolute left-0 mt-2 w-48 bg-white shadow-md">
+              <div className="absolute w-40 text-accent">
                 <ul>
-                  <li className="px-4 py-2 text-center text-accent hover:bg-accent hover:text-white">
+                  <li className="px-4 py-2 hover:bg-accent hover:text-white">
                     <Link to="/members/board" onClick={closeNav}>
                       Board
                     </Link>
                   </li>
-                  <li className="px-4 py-2 text-center text-accent hover:bg-accent hover:text-white">
+                  <li className="px-4 py-2 hover:bg-accent hover:text-white">
                     <Link to="/members/classes" onClick={closeNav}>
                       Classes
                     </Link>
@@ -106,12 +118,19 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <li className="p-4" style={{ whiteSpace: "nowrap" }}>
-            <Link to="/founders-education" onClick={closeNav}>
+          <li
+            className="p-4"
+            style={{ whiteSpace: "nowrap", ...dropdownOpenStyle }}
+          >
+            <Link
+              to="/founders-education"
+              style={dropdownOpenStyle}
+              onClick={closeNav}
+            >
               Founder's Education
             </Link>
           </li>
-          <li className="p-4">
+          <li className="p-4" style={dropdownOpenStyle}>
             <Link to="/recruitment" onClick={closeNav}>
               Recruitment
             </Link>
