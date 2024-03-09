@@ -31,27 +31,6 @@ const Stats = () => {
         </div>
       </div>
     </div>
-
-    // <div
-    //   data-theme="autumn"
-    //   className="h-screen w-full flex justify-center items-center py-16"
-    // >
-    //   <div className="mx-auto grid md:grid-cols-3 gap-x-32 gap-y-6 text-center">
-    //     {/* Adjusted container to flex and items-center for vertical centering, and set a smaller max-width */}
-    //     <div className="flex flex-col items-center gap-y-4">
-    //       <h1 className="text-secondary md:text-8xl sm:text-6xl">40+</h1>
-    //       <h2>members</h2>
-    //     </div>
-    //     <div className="flex flex-col items-center gap-y-4">
-    //       <h1 className="text-secondary md:text-8xl sm:text-6xl">20+</h1>
-    //       <h2>startups</h2>
-    //     </div>
-    //     <div className="flex flex-col items-center gap-y-4">
-    //       <h1 className="text-secondary md:text-8xl sm:text-6xl">1</h1>
-    //       <h2>family</h2>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 

@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Stats from "./components/Stats";
+import Startups from "./pages/Startups"
 
 // Placeholder components for each route
-const Startups = () => (
-  <div>
-    <h2>Startups Page</h2>
-  </div>
-);
+// const Startups = () => (
+//   <div>
+//     <h2>Startups Page</h2>
+//   </div>
+// );
 const Members = () => (
   <div>
     <h2>Members Page</h2>
