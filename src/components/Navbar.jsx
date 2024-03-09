@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom"; // Make sure to import Link
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
   };
 
-  // New function to close the navbar
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
   const closeNav = () => {
     setNav(false);
+    setIsDropdownOpen(false); // Also close the dropdown when closing the nav
   };
 
   return (
@@ -32,8 +37,24 @@ const Navbar = () => {
         <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/startups">Startups</Link>
         </li>
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
-          <Link to="/members">Members</Link>
+        <li className="relative px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+          <button onClick={toggleDropdown}>Members</button>
+          {isDropdownOpen && (
+            <div className="text-center absolute left-1/2 transform -translate-x-1/2 mt-2 w-40 text-accent">
+              <ul>
+                <li className="px-4 py-2 hover:bg-accent hover:text-white">
+                  <Link to="/members/board" onClick={closeNav}>
+                    Board
+                  </Link>
+                </li>
+                <li className="px-4 py-2 hover:bg-accent hover:text-white">
+                  <Link to="/members/classes" onClick={closeNav}>
+                    Classes
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          )}
         </li>
         <li
           className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
@@ -67,9 +88,23 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="p-4">
-            <Link to="/members" onClick={closeNav}>
-              Members
-            </Link>
+            <button onClick={toggleDropdown}>Members</button>
+            {isDropdownOpen && (
+              <div className="absolute left-0 mt-2 w-48 bg-white shadow-md">
+                <ul>
+                  <li className="px-4 py-2 text-center text-accent hover:bg-accent hover:text-white">
+                    <Link to="/members/board" onClick={closeNav}>
+                      Board
+                    </Link>
+                  </li>
+                  <li className="px-4 py-2 text-center text-accent hover:bg-accent hover:text-white">
+                    <Link to="/members/classes" onClick={closeNav}>
+                      Classes
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </li>
           <li className="p-4" style={{ whiteSpace: "nowrap" }}>
             <Link to="/founders-education" onClick={closeNav}>

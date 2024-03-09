@@ -1,54 +1,83 @@
-import React from "react";
+import React, {useState} from "react";
+import bonsai from "../assets/logos/bonsai logo icon.png";
 import bookit from "../assets/logos/bookit.png";
+import cartello from "../assets/logos/cartello logo name.png";
+import clearly from "../assets/logos/clearly logo color.png";
+import diba from "../assets/logos/diBa logo white.png";
+import disko from "../assets/logos/disko logo.png";
+import idefy from "../assets/logos/idefy logo color.png";
+import lendopoly from "../assets/logos/lendopoly logo with name.png";
+import lighthouse from "../assets/logos/lighthouse logo yellow.png";
+import puerta from "../assets/logos/puerta abierta logo.png";
+import recreate from "../assets/logos/recreate energy logo .png";
+import redfordstartup from "../assets/logos/redford startup logo.png";
+import soundsense from "../assets/logos/soundsense logo color.png";
+import student from "../assets/logos/student inc logo.png";
+import surplus from "../assets/logos/surplus logo.png";
+import thrust from "../assets/logos/thrust aeronautics logo color.png";
+import vango from "../assets/logos/vango.png";
+import wastewise from "../assets/logos/wastewise logo.png";
+
+const logos = [
+  bonsai,
+  bookit,
+  cartello,
+  clearly,
+  diba,
+  disko,
+  idefy,
+  lendopoly,
+  lighthouse,
+  puerta,
+  recreate,
+  redfordstartup,
+  soundsense,
+  student,
+  surplus,
+  thrust,
+  vango,
+  wastewise,
+];
 
 const Startups = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleSlideChange = (event) => {
+    setCurrentSlide(parseInt(event.target.value, 10));
+  };
+
   return (
     <div data-theme="forest">
-      <div className="mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center items-center">
+      <div className="mt-[-96px] w-[full] h-screen mx-auto text-center flex flex-col justify-center items-center">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-8 sm:py-6 py-6">
           Our Startups
         </h1>
-        <div className="carousel w-[80%]">
-          {/* Wrap each img in a div with flex, justify-center, and items-center to center the image */}
-          <div
-            id="slide1"
-            className="carousel-item relative w-full flex justify-center items-center"
-          >
-            <div className="px-12">
-              <img src={bookit} className="w-[50%] mx-auto" alt="test" />
+        <div className="carousel w-[80%] h-[50%] overflow-hidden justify-center items-center">
+          {logos.map((logo, index) => (
+            <div
+              key={index}
+              className={`carousel-item absolute w-[80%] flex justify-center items-center transition-opacity duration-500 ${
+                index === currentSlide ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <div className="px-12">
+                <img
+                  src={logo}
+                  className="w-[50%] mx-auto h-auto"
+                  alt={`Startup ${index + 1}`}
+                />
+              </div>
             </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide4" className="btn btn-circle btn-xs">
-                ❮
-              </a>
-              <a href="#slide2" className="btn btn-circle btn-xs">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Repeat the process for each slide */}
-          <div
-            id="slide2"
-            className="carousel-item relative w-full flex justify-center items-center"
-          >
-            <div className="px-12">
-              <img
-                src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-                className="w-full mx-auto"
-                alt="test"
-              />
-            </div>
-            <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" className="btn btn-circle btn-xs">
-                ❮
-              </a>
-              <a href="#slide3" className="btn btn-circle btn-xs">
-                ❯
-              </a>
-            </div>
-          </div>
-          {/* Continue wrapping images for centering */}
+          ))}
         </div>
+        <input
+          type="range"
+          min={0}
+          max={logos.length - 1}
+          value={currentSlide}
+          onChange={handleSlideChange}
+          className="range range-accent w-[80%]"
+        />
       </div>
     </div>
   );
