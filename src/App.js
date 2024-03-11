@@ -5,24 +5,9 @@ import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Startups from "./pages/Startups"
 import Board from "./pages/Board";
+import Classes from "./pages/Classes"
+import FoundersEducation from "./pages/FoundersEd";
 
-// Placeholder components for each route
-// const Startups = () => (
-//   <div>
-//     <h2>Startups Page</h2>
-//   </div>
-// );
-// const Members = () => (
-//   <div>
-//     <h2>Members Page</h2>
-//   </div>
-// );
-
-const FoundersEducation = () => (
-  <div>
-    <h2>Founder's Education Page</h2>
-  </div>
-);
 const Recruitment = () => (
   <div>
     <h2>Recruitment Page</h2>
@@ -46,6 +31,7 @@ function App() {
           />
           <Route path="/startups" element={<Startups />} />
           <Route path="/members/board" element={<Board />} />
+          <Route path="/members/classes" element={<Classes />} />
           <Route path="/founders-education" element={<FoundersEducation />} />
           <Route path="/recruitment" element={<Recruitment />} />
         </Routes>

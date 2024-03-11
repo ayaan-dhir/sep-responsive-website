@@ -52,14 +52,14 @@ const Navbar = () => {
         >
           <button>Members</button>
           {isDropdownOpen && (
-            <div className="text-center absolute left-1/2 transform -translate-x-1/2 w-40 text-accent">
+            <div className="text-center absolute left-1/2 transform -translate-x-1/2 w-[120px]">
               <ul>
-                <li className="px-4 py-2 hover:bg-accent hover:text-white">
+                <li className="px-4 py-2 bg-white hover:bg-accent hover:text-white text-[var(--fallback-b1,oklch(var(--b1)/1))]">
                   <Link to="/members/board" onClick={closeNav}>
                     Board
                   </Link>
                 </li>
-                <li className="px-4 py-2 hover:bg-accent hover:text-white">
+                <li className="px-4 py-2 bg-white hover:bg-accent hover:text-white text-[var(--fallback-b1,oklch(var(--b1)/1))]">
                   <Link to="/members/classes" onClick={closeNav}>
                     Classes
                   </Link>

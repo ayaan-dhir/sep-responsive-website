@@ -52,7 +52,7 @@ const boardData = [
 function Board() {
   return (
     <div data-theme="forest" className="text-center">
-      <h1 className="font-semibold text-[56pt] text-white">Board</h1>
+      <h1 className="font-semibold text-[56pt] text-white md:pt-10">Board</h1>
       <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[50px] pb-[50px]">
         {boardData.map((member) => (
           <div key={member.id} className="flex flex-col items-center">
