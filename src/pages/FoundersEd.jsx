@@ -15,16 +15,16 @@ const curriculumItems = [
 
 function FoundersEducation() {
   return (
-    <div>
-      <div className="h-screen flex flex-col m-[-96px] mx-auto text-center justify-center items-center">
+    <div className="snap-y snap-mandatory">
+      <div className="snap-start h-screen flex flex-col m-[-96px] mx-auto text-center justify-center items-center">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
-          Founder's Education
+          Founder's Education 
         </h1>
         <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-accent">
           Our Startup Accelerator
         </p>
       </div>
-      <div className="h-screen flex flex-col mx-auto text-center justify-center items-center">
+      <div className="snap-start h-screen flex flex-col mx-auto text-center justify-center items-center">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           The Program
         </h1>
@@ -33,8 +33,8 @@ function FoundersEducation() {
           helping you think and build like an entrepreneur.
         </p>
       </div>
-      <div className="h-screen mx-auto text-center justify-center items-center sm:w-[80%] m-auto">
-        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
+      <div className="snap-start h-screen mx-auto text-center justify-center items-center sm:w-[80%] m-auto">
+        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-10 sm:py-4 py-2">
           Our Curriculum
         </h1>
         <div>
@@ -50,7 +50,7 @@ function FoundersEducation() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center w-full h-full px-4 text-center py-8">
+      <div className="snap-start flex flex-col justify-center items-center w-full h-screen px-4 text-center py-8">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-8 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
           A Note from Our FE
         </h1>
