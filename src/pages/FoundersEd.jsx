@@ -38,7 +38,7 @@ function FoundersEducation() {
           Our Curriculum
         </h1>
         <div>
-          <div className="grid justify-center items-start sm:gap-[40px] gap-[20px] px-[50px] sm:grid-cols-[repeat(auto-fit,minmax(150px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))] grid-cols-[repeat(auto-fit,minmax(110px,1fr))] pb-[10px]">
+          <div className="grid justify-center items-start gap-4 px-5 sm:gap-6 sm:px-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 pb-10">
             {curriculumItems.map((item, index) => (
               <div
                 key={index}
