@@ -7,12 +7,8 @@ import Startups from "./pages/Startups"
 import Board from "./pages/Board";
 import Classes from "./pages/Classes"
 import FoundersEducation from "./pages/FoundersEd";
+import Recruitment from "./pages/Recruitment";
 
-const Recruitment = () => (
-  <div>
-    <h2>Recruitment Page</h2>
-  </div>
-);
 
 function App() {
   return (
