@@ -12,6 +12,8 @@ const curriculumItems = [
   { title: "Pitching" },
 ];
 
+// TODO: make all the scroll snaps to only be on larger screens, phones don't need it, thanks to shreya for the idea
+
 function FoundersEducation() {
 
   const customHeight = 'calc(100vh - 96px)';
