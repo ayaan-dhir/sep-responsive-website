@@ -30,8 +30,7 @@ const Navbar = () => {
   return (
     <div
       data-theme="forest"
-      className="flex justify-between items-center h-24 mx-auto px-6"
-      style={{ position: "relative", zIndex: 1 }}
+      className="flex justify-between items-center h-24 mx-auto px-6 fixed inset-0 z-10"
     >
       <Link
         to="/"
