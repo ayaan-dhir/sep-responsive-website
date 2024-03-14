@@ -1,5 +1,4 @@
 import React from "react";
-
 import ayaan from "../assets/members/alpha/ayaan.jpg";
 
 const curriculumItems = [
@@ -14,9 +13,21 @@ const curriculumItems = [
 ];
 
 function FoundersEducation() {
+
+  const customHeight = 'calc(100vh - 96px)';
+
   return (
-    <div className="overflow-y-scroll snap-mandatory snap-y h-screen m-[-96px]">
-      <div className="snap-start h-screen flex flex-col mx-auto text-center justify-center items-center">
+    <div
+      style={{
+        height: "calc(100vh - 96px)", // Adjust the height to be the full viewport height minus 96px
+        // marginTop: "-96px", // Move everything up by 96px
+      }}
+      className="overflow-y-scroll snap-mandatory snap-y h-screen"
+    >
+      <div
+        style={{ height: customHeight }}
+        className="snap-start flex flex-col mx-auto text-center justify-center items-center pb-[96px]"
+      >
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           Founder's Education
         </h1>
@@ -24,7 +35,10 @@ function FoundersEducation() {
           Our Startup Accelerator
         </p>
       </div>
-      <div className="snap-start h-screen flex flex-col mx-auto text-center justify-center items-center w-[80%]">
+      <div
+        style={{ height: customHeight }}
+        className="snap-start flex flex-col mx-auto text-center justify-center items-center w-[80%] pb-[96px]"
+      >
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           The Program
         </h1>
@@ -33,7 +47,10 @@ function FoundersEducation() {
           helping you think and build like an entrepreneur.
         </p>
       </div>
-      <div className="snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
+      <div
+        style={{ height: customHeight }}
+        className="snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto pb-[96px]"
+      >
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-10 sm:py-4 py-2">
           Our Curriculum
         </h1>
@@ -50,7 +67,10 @@ function FoundersEducation() {
           </div>
         </div>
       </div>
-      <div className="snap-start flex flex-col justify-center items-center w-full h-screen px-4 text-center py-8">
+      <div
+        style={{ height: customHeight }}
+        className="snap-start flex flex-col justify-center items-center w-full h-screen px-4 text-center py-8 pb-[96px]"
+      >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-8 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
           A Note from Our FE
         </h1>
