@@ -42,7 +42,7 @@ function FoundersEducation() {
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           The Program
         </h1>
-        <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-accent px-20">
+        <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-accent px-10">
           Founder's Education is our 8-week startup incubator program focused on
           helping you think and build like an entrepreneur.
         </p>
@@ -59,7 +59,7 @@ function FoundersEducation() {
             {curriculumItems.map((item, index) => (
               <div
                 key={index}
-                className="sm:text-2xl text-l font-medium text-accent border-[4px] border-white rounded-lg sm:p-[20px] p-[10px] flex flex-col justify-center sm:h-[120px] h-[80px]"
+                className="sm:text-2xl text-l font-medium text-accent border-[4px] border-white rounded-lg sm:p-[20px] p-[10px] flex flex-col justify-center sm:h-[120px] h-[70px]"
               >
                 <div className="title">{item.title}</div>
               </div>
@@ -75,7 +75,7 @@ function FoundersEducation() {
           A Note from Our FE
         </h1>
         <div className="flex flex-col lg:flex-row justify-center items-center w-full max-w-6xl mt-6">
-          <div className="w-11/12 sm:w-3/4 md:w-1/3 lg:max-w-md xl:w-96 mx-auto lg:mx-4 my-4 rounded-lg overflow-hidden shadow-lg">
+          <div className="w-8/12 sm:w-3/4 md:w-1/3 lg:max-w-md xl:w-96 mx-auto lg:mx-4 my-4 rounded-lg overflow-hidden shadow-lg">
             <img src={ayaan} alt="Founder's Ed" className="w-full h-auto" />
           </div>
           <div className="flex-1 text-xl md:text-2xl lg:text-3xl mt-6 lg:mt-0 mx-4 text-left text-accent">
