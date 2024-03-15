@@ -28,7 +28,7 @@ const recruitmentSchedule = [
   {
     id: 5,
     date: "Tues",
-    event: "Apps Due",
+    event: "Applications Due",
   },
 
   {
@@ -45,7 +45,7 @@ const recruitmentSchedule = [
 
 const Recruitment = () => {
   return (
-    <div className="overflow-y-scroll snap-mandatory snap-y h-screen">
+    <div className="overflow-y-scroll sm:snap-mandatory sm:snap-y h-screen">
       <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           Recruitment
@@ -55,7 +55,7 @@ const Recruitment = () => {
         </p>
       </div>
       <div className="snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2 mt-16">
+        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
           The Schedule
         </h1>
         <div>
@@ -65,8 +65,10 @@ const Recruitment = () => {
                 key={index}
                 className="sm:text-2xl text-l font-medium text-accent border-[4px] border-white rounded-lg sm:p-[20px] p-[10px] flex flex-col justify-center sm:h-[120px] h-[90px]"
               >
-                <div className="text-l font-extrabold">{item.date}</div>
-                <div className="text-sm font-normal text-white">
+                <div className="text-l sm:text-2xl font-extrabold">
+                  {item.date}
+                </div>
+                <div className="text-sm sm:text-xl font-normal text-white">
                   {item.event}
                 </div>
               </div>
@@ -74,17 +76,17 @@ const Recruitment = () => {
           </div>
         </div>
       </div>
-      <div className="snap-start flex flex-col justify-center items-center w-full h-screen text-center">
+      <div className="snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-20 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
           President's Note
         </h1>
         <div className="flex flex-col lg:flex-row md:flex-row justify-center items-center w-full max-w-6xl">
-          <div className="w-5/12 sm:w-3/4 md:w-1/3 lg:max-w-md xl:w-96 mx-auto mt-2 lg:mx-4 rounded-lg overflow-hidden">
+          <div className="w-6/12 sm:w-3/4 md:w-1/3 lg:max-w-md xl:w-96 mx-auto mt-2 lg:mx-4 rounded-lg overflow-hidden">
             <img src={shreya} alt="President" className="w-full h-auto" />
           </div>
-          <div className="flex-1 font-normal text-md md:text-xl lg:text-3xl mt-2 lg:mt-0 mx-4 text-left text-accent">
+          <div className="flex-1 font-normal text-md md:text-2xl lg:text-3xl mt-2 lg:mt-0 mx-4 text-left text-accent">
             <p>
-              "Hey All, My name is Shreya Mawandia and I am so excited to
+              "Hey all, My name is Shreya Mawandia and I am so excited to
               welcome you to Spring 2024 Recruitment! I truly enjoyed my
               recruitment process as it was the first taste of what the culture
               at Sigma Eta Pi was and is today: scrappy, innovative, and

@@ -14,7 +14,7 @@ const curriculumItems = [
 
 function FoundersEducation() {
   return (
-    <div className="overflow-y-scroll snap-mandatory snap-y h-screen">
+    <div className="overflow-y-scroll sm:snap-mandatory sm:snap-y h-screen">
       <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           Founder's Education
@@ -33,7 +33,7 @@ function FoundersEducation() {
         </p>
       </div>
       <div className="snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2 mt-16">
+        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
           Our Curriculum
         </h1>
         <div>
@@ -49,7 +49,7 @@ function FoundersEducation() {
           </div>
         </div>
       </div>
-      <div className="snap-start flex flex-col justify-center items-center w-full h-screen text-center">
+      <div className="snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-20 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
           A Note from Our FE
         </h1>
@@ -63,12 +63,11 @@ function FoundersEducation() {
               through our Founder's Education, our program designed to help you
               chase after your entrepreneurial endeavors. Our program is focused
               on collaboration and community as you get to build alongside your
-              cohort. We have had members
-              come in with no experience who later go on to pursue
-              entrepreneurship full-time and we also have members who have
-              started ventures before joining who go on to build
-              their next startup. FE is the place where innovators at UCI come
-              to build!"
+              cohort. We have had members come in with no experience who later
+              go on to pursue entrepreneurship full-time and we also have
+              members who have started ventures before joining who go on to
+              build their next startup. FE is the place where innovators at UCI
+              come to build!"
             </p>
           </div>
         </div>
