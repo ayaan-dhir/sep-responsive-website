@@ -4,7 +4,7 @@ const Stats = () => {
   return (
     <div
       data-theme="forest"
-      className="join join-vertical lg:join-horizontal flex items-center justify-center mx-auto h-screen w-full gap-x-20 px-6 gap-y-10"
+      className="join join-vertical lg:join-horizontal flex items-center justify-center h-screen w-full gap-x-20 px-6 gap-y-5 pt-[96px]"
     >
       <div className="card card-normal w-64 md:w-96 sm:w-80 bg-accent text-primary-content text-center hover:scale-110 duration-300">
         <div className="card-body">

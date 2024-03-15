@@ -87,7 +87,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed right-0 top-0 w-[50%] h-full border-l border-l-gray-900 bg-[#191818] ease-in-out duration-500"
+            ? "fixed right-0 top-0 w-[60%] h-full border-l border-l-gray-900 bg-[#191818] ease-in-out duration-500"
             : "fixed right-[-100%] top-0 w-[50%] h-full border-l border-l-gray-900 bg-[#191818] ease-in-out duration-500"
         }
         style={{ zIndex: 1 }}

@@ -48,7 +48,7 @@ const Startups = () => {
 
   return (
     <div data-theme="forest">
-      <div className="mt-[-96px] w-[full] h-screen mx-auto text-center flex flex-col justify-center items-center">
+      <div className="w-[full] h-screen mx-auto text-center flex flex-col justify-center items-center">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-8 sm:py-6 py-6 text-white">
           Our Startups
         </h1>
