@@ -46,7 +46,7 @@ const recruitmentSchedule = [
 const Recruitment = () => {
   return (
     <div className="sm:overflow-y-scroll sm:snap-mandatory sm:snap-y sm:h-screen">
-      <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
+      <div className="sm:snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           Recruitment
         </h1>
@@ -54,7 +54,7 @@ const Recruitment = () => {
           Spring 2024 Interest Form
         </p>
       </div>
-      <div className="snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
+      <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
           The Schedule
         </h1>
@@ -76,7 +76,7 @@ const Recruitment = () => {
           </div>
         </div>
       </div>
-      <div className="snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
+      <div className="sm:snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-20 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
           President's Note
         </h1>
