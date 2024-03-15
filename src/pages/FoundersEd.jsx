@@ -32,7 +32,7 @@ function FoundersEducation() {
           helping you think and build like an entrepreneur.
         </p>
       </div>
-      <div className="sm:snap-startsnap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
+      <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
         <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
           Our Curriculum
         </h1>
@@ -49,7 +49,7 @@ function FoundersEducation() {
           </div>
         </div>
       </div>
-      <div className="sm:snap-startsnap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
+      <div className="sm:snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-20 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
           A Note from Our FE
         </h1>

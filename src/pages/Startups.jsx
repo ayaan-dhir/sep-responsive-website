@@ -47,9 +47,9 @@ const Startups = () => {
   };
 
   return (
-    <div data-theme="forest">
+    <div data-theme="light">
       <div className="w-[full] h-screen mx-auto text-center flex flex-col justify-center items-center">
-        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-8 sm:py-6 py-6 text-white">
+        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-8 sm:py-6 py-6 text-black">
           Our Startups
         </h1>
         <div className="carousel w-[80%] h-[50%] overflow-hidden justify-center items-center">

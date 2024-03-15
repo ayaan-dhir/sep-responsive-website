@@ -29,12 +29,12 @@ const Navbar = () => {
 
   return (
     <div
-      data-theme="forest"
+      data-theme="light"
       className="flex justify-between items-center h-24 mx-auto px-6 fixed inset-0 z-10"
     >
       <Link
         to="/"
-        className="w-full text-3xl font-bold text-[white]"
+        className="w-full text-3xl font-bold text-black"
         style={{ whiteSpace: "nowrap" }}
         onClick={closeNav} // Close nav when clicking on the logo/home link
       >
@@ -87,8 +87,8 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? "fixed right-0 top-0 w-[60%] h-full border-l border-l-gray-900 bg-[#191818] ease-in-out duration-500"
-            : "fixed right-[-100%] top-0 w-[50%] h-full border-l border-l-gray-900 bg-[#191818] ease-in-out duration-500"
+            ? "fixed right-0 top-0 w-[60%] h-full border-l border-gray bg-white ease-in-out duration-500"
+            : "fixed right-[-100%] top-0 w-[50%] h-full border-l border-gray bg-white ease-in-out duration-500"
         }
         style={{ zIndex: 1 }}
       >
