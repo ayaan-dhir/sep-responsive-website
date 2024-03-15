@@ -45,7 +45,7 @@ const recruitmentSchedule = [
 
 const Recruitment = () => {
   return (
-    <div className="overflow-y-scroll sm:snap-mandatory sm:snap-y h-screen">
+    <div className="sm:overflow-y-scroll sm:snap-mandatory sm:snap-y sm:h-screen">
       <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
           Recruitment
