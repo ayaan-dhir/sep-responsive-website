@@ -348,7 +348,7 @@ const foundingData = [
 
 function Classes() {
   return (
-    <div data-theme="forest" className="text-center">
+    <div data-theme="business" className="text-center">
       <h1 className="font-semibold text-[56pt] text-white pt-[96px]">Classes</h1>
       <h2 className="font-normal text-[40pt] text-white pt-[30px]">Epsilon</h2>
       <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">

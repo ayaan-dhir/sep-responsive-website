@@ -13,7 +13,7 @@ import Recruitment from "./pages/Recruitment";
 function App() {
   return (
     <Router>
-      <div data-theme="light">
+      <div data-theme="business">
         <Navbar />
         <Routes>
           <Route

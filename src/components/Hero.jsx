@@ -1,25 +1,29 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
-import { ReactTyped } from "react-typed";
+import { AuroraBackground } from "./ui/aurora-background";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <div data-theme="light">
-      <div className="max-w-[800px] w-full h-screen mx-auto text-center flex flex-col justify-center">
-        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
+    <AuroraBackground>
+      <motion.div
+        initial={{ opacity: 0.0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="relative flex flex-col items-center justify-center px-4"
+      >
+        <div className="text-4xl md:text-7xl font-bold text-white text-center pb-3">
           Sigma Eta Pi
-        </h1>
-        <div className="flex justify-center items-center">
-          <ReactTyped
-            className="md:text-4xl sm:text-3xl text-2xl font-bold text-primary"
-            strings={["Build.", "Connect.", "Launch."]}
-            typeSpeed={100}
-            backSpeed={120}
-            loop
-          />
         </div>
-      </div>
-    </div>
+        <div className="font-light text-xl md:text-3xl text-[#8787ff]">
+          Build your future...
+        </div>
+      </motion.div>
+    </AuroraBackground>
   );
-};
-
-export default Hero;
+}
