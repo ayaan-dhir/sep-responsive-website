@@ -21,7 +21,7 @@ export default function Hero() {
           Sigma Eta Pi
         </div>
         <div className="font-light text-xl md:text-3xl text-[#8787ff]">
-          Build your future...
+          The future is here...
         </div>
       </motion.div>
     </AuroraBackground>
