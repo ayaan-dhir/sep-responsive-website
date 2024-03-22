@@ -47,15 +47,15 @@ const Recruitment = () => {
   return (
     <div className="sm:overflow-y-scroll sm:snap-mandatory sm:snap-y sm:h-screen">
       <div className="sm:snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
-        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2">
+        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2 text-white">
           Recruitment
         </h1>
-        <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-accent">
+        <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-[#4343ff]">
           Spring 2024 Interest Form
         </p>
       </div>
       <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
-        <h1 className="md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
+        <h1 className="text-white md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
           The Schedule
         </h1>
         <div>
@@ -63,7 +63,7 @@ const Recruitment = () => {
             {recruitmentSchedule.map((item, index) => (
               <div
                 key={index}
-                className="sm:text-2xl text-l font-medium text-accent border-[4px] border-white rounded-lg sm:p-[20px] p-[10px] flex flex-col justify-center sm:h-[120px] h-[90px]"
+                className="sm:text-2xl text-l font-medium text-[#4343ff] border-[4px] border-white rounded-lg sm:p-[20px] p-[10px] flex flex-col justify-center sm:h-[120px] h-[90px]"
               >
                 <div className="text-l sm:text-2xl font-extrabold">
                   {item.date}
@@ -84,7 +84,7 @@ const Recruitment = () => {
           <div className="w-6/12 sm:w-3/4 md:w-1/3 lg:max-w-md xl:w-96 mx-auto mt-2 lg:mx-4 rounded-lg overflow-hidden">
             <img src={shreya} alt="President" className="w-full h-auto" />
           </div>
-          <div className="flex-1 font-normal text-md md:text-2xl lg:text-3xl mt-2 lg:mt-0 mx-4 text-left text-accent">
+          <div className="flex-1 font-normal text-md md:text-2xl lg:text-3xl mt-2 lg:mt-0 mx-4 text-left text-[#4343ff]">
             <p>
               "Hey all, My name is Shreya Mawandia and I am so excited to
               welcome you to Spring 2024 Recruitment! I truly enjoyed my

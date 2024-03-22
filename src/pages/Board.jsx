@@ -51,7 +51,7 @@ const boardData = [
 
 function Board() {
   return (
-    <div data-theme="business" className="text-center pt-[96px]">
+    <div data-theme="black" className="text-center pt-[96px]">
       <h1 className="font-semibold text-[56pt] text-white md:pt-10">Board</h1>
       <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[50px] pb-[50px]">
         {boardData.map((member) => (
@@ -64,7 +64,7 @@ function Board() {
             <div className="font-bold text-[16pt] mt-[5px] text-white">
               {member.position}
             </div>
-            <div className="font-light text-[18pt] mt-[5px]">{member.name}</div>
+            <div className="font-light text-[18pt] mt-[5px] text-white">{member.name}</div>
           </div>
         ))}
       </div>
