@@ -1,24 +1,35 @@
 import React from "react";
 import shreya from "../assets/members/board/shreya.jpg";
-import rise from "/Users/ayaandhir/Documents/sep-responsive-website/src/assets/recruitment/rise-banner2.png";
+import rise from "../assets/recruitment/rise-banner2.png";
+import { HoverBorderGradient } from "../components/ui/hover-border-gradient.tsx";
 
 const Recruitment = () => {
   return (
     <div className="sm:overflow-y-scroll sm:snap-mandatory sm:snap-y sm:h-screen">
-      <div className="sm:snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
-        <img
-          className="w-[80%] object-[50%_50%] sm:object-[50%_50%] md:object-[30%_50%]"
-          src={rise}
-          alt="Rise"
-        />
+      <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
+        <img className="sm:w-[70%] w-[90%]" src={rise} alt="Rise" />
+        <div className="pt-2 pb-2">
+          <HoverBorderGradient>
+            <a
+              href="https://forms.gle/EqRMeY1nV8pLoH7ZA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-white font-bold rounded px-5 py-2"
+            >
+              Interest Form
+            </a>
+          </HoverBorderGradient>
+        </div>
       </div>
       <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center m-auto">
         <h1 className="text-white md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
           The Schedule
         </h1>
-        <img className="w-[80%] object-[50%_50%] sm:object-[50%_50%] md:object-[30%_50%]"
+        <img
+          className="w-[80%] object-[50%_50%] sm:object-[50%_50%] md:object-[30%_50%]"
           src={rise}
-          alt="Rise"/>
+          alt="Rise"
+        />
       </div>
       <div className="sm:snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-20 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl">
