@@ -59,6 +59,7 @@ function Board() {
             <img
               src={member.photo}
               alt={member.name}
+              loading='lazy'
               className="w-10/12 rounded-[20px] object-cover"
             />
             <div className="font-bold text-[16pt] mt-[5px] text-white">
