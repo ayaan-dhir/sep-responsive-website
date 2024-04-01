@@ -15,7 +15,7 @@ export default function Hero() {
             href="https://forms.gle/Xsw8naSn5Y52xc3m6"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white font-semibold rounded w-[150px]"
+            className="z-1 inline-block text-white font-semibold rounded w-[150px]"
           >
             Apply Now!
           </a>
