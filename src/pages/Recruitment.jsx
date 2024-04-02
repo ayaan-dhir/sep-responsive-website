@@ -10,26 +10,31 @@ const Recruitment = () => {
       <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
         <img className="sm:w-[70%] w-[90%]" src={rise} alt="Rise" />
         <div className="flex justify-center items-center pt-2 pb-2 space-x-4">
-          <HoverBorderGradient>
-            <a
-              href="https://forms.gle/EqRMeY1nV8pLoH7ZA"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-white font-bold rounded px-2 py-2 w-[130px]"
-            >
-              Interest Form
-            </a>
-          </HoverBorderGradient>
-          <HoverBorderGradient>
-            <a
-              href="https://forms.gle/Xsw8naSn5Y52xc3m6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block text-white font-bold rounded px-2 py-2 w-[130px]"
-            >
-              Application
-            </a>
-          </HoverBorderGradient>
+          <div className="md:z-10 z-0">
+            <HoverBorderGradient>
+              <a
+                href="https://forms.gle/EqRMeY1nV8pLoH7ZA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white font-bold rounded px-2 py-2 w-[130px]"
+              >
+                Interest Form
+              </a>
+            </HoverBorderGradient>
+          </div>
+
+          <div className="md:z-10 z-0">
+            <HoverBorderGradient>
+              <a
+                href="https://forms.gle/Xsw8naSn5Y52xc3m6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-white font-bold rounded px-2 py-2 w-[130px]"
+              >
+                Application
+              </a>
+            </HoverBorderGradient>
+          </div>
         </div>
       </div>
       <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center m-auto">
