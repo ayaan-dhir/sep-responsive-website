@@ -8,6 +8,7 @@ import Board from "./pages/Board";
 import Classes from "./pages/Classes"
 import FoundersEducation from "./pages/FoundersEd";
 import Recruitment from "./pages/Recruitment";
+import Community from "./pages/Community";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <>
                 <Hero />
                 <Stats />
+                <Community />
               </>
             }
           />

@@ -4,7 +4,7 @@ export default function Stats() {
   return (
     <div className="sm:h-screen flex flex-col items-center justify-center">
       <div className="container px-6 pt-8 pb-4 mx-auto">
-        <h1 className="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+        <h1 className="text-4xl font-semibold text-center text-gray-800 lg:text-3xl dark:text-white">
           UCI's Premier Entrepreneurship Fraternity
         </h1>
 
