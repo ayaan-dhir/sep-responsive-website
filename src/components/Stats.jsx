@@ -1,73 +1,55 @@
-// "use client";
-// import React from "react";
-// // import { BackgroundGradient } from "./ui/background-gradient";
-
-// const Stats = () => {
-//   return (
-//     <div className="join join-vertical lg:join-horizontal flex items-center justify-center h-screen w-full gap-x-20 px-6 gap-y-5 dpt-[96px]">
-//       <div className="card card-normal rounded-[22px] bg-[#4343ff] w-64 md:w-96 sm:w-80 text-center hover:scale-110 duration-300">
-//         <div className="card-body bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
-//           <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
-//             40+
-//           </h1>
-//           <p className="md:text-3xl sm:text-2xl text-xl">members</p>
-//         </div>
-//       </div>
-//       <div className="card card-normal rounded-[22px] bg-[#4343ff] w-64 md:w-96 sm:w-80 text-white text-center hover:scale-110 duration-300">
-//         <div className="card-body bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
-//           <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
-//             20+
-//           </h1>
-//           <p className="md:text-3xl sm:text-2xl text-xl">startups</p>
-//         </div>
-//       </div>
-//       <div className="card card-normal rounded-[22px] bg-[#4343ff] w-64 md:w-96 sm:w-80 bg- text-white text-center hover:scale-110 duration-300">
-//         <div className="card-body bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-400">
-//           <h1 className="card-title justify-center md:text-6xl sm:text-5xl text-4xl">
-//             1
-//           </h1>
-//           <p className="md:text-3xl sm:text-2xl text-xl">family</p>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Stats;
-
-"use client";
-
-import React, { useEffect, useState } from "react";
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import React from "react";
 
 export default function Stats() {
   return (
-    <div className="h-screen w-full rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center">
-      <InfiniteMovingCards
-        className="text-center"
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
+    <div class="sm:h-screen flex flex-col items-center justify-center">
+      <div class="container px-6 pt-8 pb-4 mx-auto">
+        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+          UCI's Premier Entrepreneurship Fraternity
+        </h1>
+
+        <p class="max-w-2xl mx-auto mt-4 text-center text-gray-500 xl:mt-6 dark:text-gray-300">
+          Sigma Eta Pi is a tight-knit community of founders, innovators, and
+          builders focused on making an impact in our communities. We do things
+          differently at SEP.
+        </p>
+
+        <div class="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 lg:grid-cols-3">
+          <div class="w-full p-8 space-y-4 text-center border border-gray-200 rounded-lg dark:border-gray-700">
+            <h2 class="text-4xl font-semibold text-gray-800 uppercase dark:text-gray-100">
+              40+
+            </h2>
+            <p class="font-medium text-gray-500 dark:text-gray-300">Members</p>
+          </div>
+
+          <div class="w-full p-8 space-y-4 text-center border border-gray-200 rounded-lg dark:border-gray-700">
+            <h2 class="text-4xl font-semibold text-gray-800 uppercase dark:text-gray-100">
+              15+
+            </h2>
+            <p class="font-medium text-gray-500 dark:text-gray-300">Majors</p>
+          </div>
+          <div class="w-full p-8 space-y-4 text-center border border-gray-200 rounded-lg dark:border-gray-700">
+            <h2 class="text-4xl font-semibold text-gray-800 uppercase dark:text-gray-100">
+              20+
+            </h2>
+            <p class="font-medium text-gray-500 dark:text-gray-300">Startups</p>
+          </div>
+          <div class="w-full p-8 space-y-4 text-center border border-gray-200 rounded-lg dark:border-gray-700">
+            <h2 class="text-4xl font-semibold text-gray-800 uppercase dark:text-gray-100">
+              $1M+
+            </h2>
+            <p class="font-medium text-gray-500 dark:text-gray-300">
+              In Funding
+            </p>
+          </div>
+          <div class="w-full p-8 space-y-4 text-center border border-gray-200 rounded-lg dark:border-gray-700">
+            <h2 class="text-4xl font-semibold text-gray-800 uppercase dark:text-gray-100">
+              1
+            </h2>
+            <p class="font-medium text-gray-500 dark:text-gray-300">Family</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
-const testimonials = [
-  {
-    quote: "20+",
-    title: "Startups",
-  },
-  {
-    quote: "40+",
-    title: "Members",
-  },
-  {
-    quote: "1",
-    title: "Family",
-  },
-  {
-    quote: "1M+",
-    title: "In Funding",
-  },
-];

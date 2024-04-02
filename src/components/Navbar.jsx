@@ -59,8 +59,8 @@ const Navbar = () => {
 
   // Conditional style based on navbarDark state
   const navbarStyles = navbarDark
-    ? { backgroundColor: "rgba(11, 11, 11, 0.2)" }
-    : { backgroundColor: "transparent" };
+    ? { backgroundColor: "black" }
+    : { backgroundColor: "black" };
 
   return (
     <div
