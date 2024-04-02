@@ -53,7 +53,7 @@ export const InfiniteMovingCards = ({
     if (speed === "fast") {
       duration = "20s";
     } else if (speed === "slow") {
-      duration = "60s";
+      duration = "600s";
     }
     containerRef.current?.style.setProperty("--animation-duration", duration);
   };
@@ -74,7 +74,6 @@ export const InfiniteMovingCards = ({
             key={idx}
             className="w-[200px] h-[300px] sm:w-[450px] sm:h-[450px] flex items-center justify-center max-w-full relative rounded-2xl flex-shrink-0"
           >
-            {/* Use <img> with loading="lazy" for lazy loading */}
             <img
               src={item.image}
               alt={item.name || item.title || `Item ${idx}`}
