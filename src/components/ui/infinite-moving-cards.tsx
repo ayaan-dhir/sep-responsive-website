@@ -8,9 +8,9 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    image: string; // Now expects an image URL
-    name?: string; // Optional, if you still want to include some text
-    title?: string; // Optional, if you still want to include some text
+    image: string;
+    name?: string;
+    title?: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -53,7 +53,7 @@ export const InfiniteMovingCards = ({
     if (speed === "fast") {
       duration = "20s";
     } else if (speed === "slow") {
-      duration = "700s";
+      duration = "60s";
     }
     containerRef.current?.style.setProperty("--animation-duration", duration);
   };
@@ -73,10 +73,15 @@ export const InfiniteMovingCards = ({
           <li
             key={idx}
             className="w-[200px] h-[300px] sm:w-[450px] sm:h-[450px] flex items-center justify-center max-w-full relative rounded-2xl flex-shrink-0"
-            style={{
-              background: `url(${item.image}) center / cover no-repeat`,
-            }}
-          ></li>
+          >
+            {/* Use <img> with loading="lazy" for lazy loading */}
+            <img
+              src={item.image}
+              alt={item.name || item.title || `Item ${idx}`}
+              className="w-full h-full object-cover rounded-2xl"
+              loading="lazy"
+            />
+          </li>
         ))}
       </ul>
     </div>
