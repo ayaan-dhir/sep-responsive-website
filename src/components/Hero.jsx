@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="h-screen w-full bg-black relative flex flex-col items-center justify-center antialiased">
       <div className="flex flex-col items-center max-w-2xl mx-auto p-4">
-        <h1 className="relative z-1 md:z-10 text-4xl md:text-7xl pb-3 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold p-2">
+        <h1 className="relative z-1 md:z-10 text-4xl md:text-7xl pb-3 text-white text-center font-sans font-bold p-2">
           Sigma Eta Pi
         </h1>
         <div className="md:z-10 z-0">
@@ -16,7 +16,7 @@ export default function Hero() {
               href="https://forms.gle/Xsw8naSn5Y52xc3m6"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block text-white font-semibold rounded w-[150px]"
+              className="inline-block text-slate-400 font-semibold rounded w-[150px]"
             >
               Apply Now!
             </a>

@@ -4,7 +4,7 @@ export const InfiniteMovingCards = ({
   items,
   direction = "left",
   speed = "slow",
-  pauseOnHover = true,
+  pauseOnHover = false,
   className,
 }: {
   items: {
