@@ -74,21 +74,21 @@ const images = [
     name: "aifinals",
     title: "aifinals",
   },
-  {
-    image: alphaBeta,
-    name: "alpha Beta",
-    title: "alpha Beta",
-  },
+  // {
+  //   image: alphaBeta,
+  //   name: "alpha Beta",
+  //   title: "alpha Beta",
+  // },
   {
     image: alphaog,
     name: "alphaog",
     title: "alphaog",
   },
-  {
-    image: ariyaJess,
-    name: "ariya Jess",
-    title: "ariya Jess",
-  },
+  // {
+  //   image: ariyaJess,
+  //   name: "ariya Jess",
+  //   title: "ariya Jess",
+  // },
   {
     image: ball,
     name: "ball",
@@ -164,11 +164,11 @@ const images = [
     name: "mhfinals",
     title: "mhfinals",
   },
-  {
-    image: michelleToni,
-    name: "michelle Toni",
-    title: "michelle Toni",
-  },
+  // {
+  //   image: michelleToni,
+  //   name: "michelle Toni",
+  //   title: "michelle Toni",
+  // },
   {
     image: prezpitch,
     name: "prezpitch",
@@ -184,11 +184,11 @@ const images = [
     name: "table",
     title: "table",
   },
-  {
-    image: uciUcsd,
-    name: "uci Ucsd",
-    title: "uci Ucsd",
-  },
+  // {
+  //   image: uciUcsd,
+  //   name: "uci Ucsd",
+  //   title: "uci Ucsd",
+  // },
   {
     image: vnmoderators,
     name: "vnmoderators",
