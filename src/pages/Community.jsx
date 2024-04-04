@@ -71,80 +71,134 @@ export default function Community() {
 const images = [
   {
     image: aifinals,
+    name: "aifinals",
+    title: "aifinals",
   },
   {
     image: alphaBeta,
+    name: "alpha Beta",
+    title: "alpha Beta",
   },
   {
     image: alphaog,
+    name: "alphaog",
+    title: "alphaog",
   },
   {
     image: ariyaJess,
+    name: "ariya Jess",
+    title: "ariya Jess",
   },
   {
     image: ball,
+    name: "ball",
+    title: "ball",
   },
   {
     image: banner,
+    name: "banner",
+    title: "banner",
   },
   {
     image: boys,
+    name: "boys",
+    title: "boys",
   },
   {
     image: check,
+    name: "check",
+    title: "check",
   },
   {
     image: check2,
+    name: "check2",
+    title: "check2",
   },
   {
     image: clareVango,
+    name: "clare Vango",
+    title: "clare Vango",
   },
   {
     image: cookin,
+    name: "cookin",
+    title: "cookin",
   },
   {
     image: crescentbros,
+    name: "crescentbros",
+    title: "crescentbros",
   },
   {
     image: deltaDaniel,
+    name: "delta Daniel",
+    title: "delta Daniel",
   },
   {
     image: deltaRomeo,
+    name: "delta Romeo",
+    title: "delta Romeo",
   },
   {
     image: deltamerch,
+    name: "deltamerch",
+    title: "deltamerch",
   },
   {
     image: empathics,
+    name: "empathics",
+    title: "empathics",
   },
   {
     image: grouppic,
+    name: "grouppic",
+    title: "grouppic",
   },
   {
     image: hike,
+    name: "hike",
+    title: "hike",
   },
   {
     image: mhfinals,
+    name: "mhfinals",
+    title: "mhfinals",
   },
   {
     image: michelleToni,
+    name: "michelle Toni",
+    title: "michelle Toni",
   },
   {
     image: prezpitch,
+    name: "prezpitch",
+    title: "prezpitch",
   },
   {
     image: shake,
+    name: "shake",
+    title: "shake",
   },
   {
     image: table,
+    name: "table",
+    title: "table",
   },
   {
     image: uciUcsd,
+    name: "uci Ucsd",
+    title: "uci Ucsd",
   },
   {
     image: vnmoderators,
+    name: "vnmoderators",
+    title: "vnmoderators",
   },
   {
     image: web3mixer,
+    name: "web3mixer",
+    title: "web3mixer",
   },
 ];
+
+
