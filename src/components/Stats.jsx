@@ -4,11 +4,11 @@ export default function Stats() {
   return (
     <div className="sm:h-screen flex flex-col items-center justify-center">
       <div className="container px-6 pt-8 pb-4 mx-auto">
-        <h1 className="text-4xl font-semibold text-center text-gray-800 lg:text-3xl dark:text-white">
+        <h1 className="lg:text-6xl text-4xl font-semibold text-center text-gray-800 dark:text-white">
           UCI's Premier Entrepreneurship Fraternity
         </h1>
 
-        <p className="max-w-2xl mx-auto mt-4 text-center text-gray-500 xl:mt-6 dark:text-gray-300">
+        <p className="lg:text-2xl lg:max-w-5xl max-w-3xl mx-auto mt-4 text-center text-gray-500 xl:mt-6 dark:text-gray-300">
           Sigma Eta Pi is a tight-knit community of founders, innovators, and
           builders focused on making an impact in our communities. We do things
           differently at SEP.
