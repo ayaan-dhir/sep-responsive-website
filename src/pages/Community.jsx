@@ -30,9 +30,9 @@ import { InfiniteMovingCards } from "../components/ui/infinite-moving-cards";
 // import web3mixer from "../assets/community/web3mixer.JPG";
 
 import aifinals from "../assets/community/compressed/aifinals Large.jpeg";
-import alphaBeta from "../assets/community/compressed/alpha+beta Large.jpeg";
+// import alphaBeta from "../assets/community/compressed/alpha+beta Large.jpeg";
 import alphaog from "../assets/community/compressed/alphaog Large.jpeg";
-import ariyaJess from "../assets/community/compressed/ariya+jess Large.jpeg";
+// import ariyaJess from "../assets/community/compressed/ariya+jess Large.jpeg";
 import ball from "../assets/community/compressed/ball Large.jpeg";
 import banner from "../assets/community/compressed/banner Large.jpeg";
 import boys from "../assets/community/compressed/boys Large.jpeg";
@@ -48,11 +48,11 @@ import empathics from "../assets/community/compressed/empathics Large.jpeg";
 import grouppic from "../assets/community/compressed/grouppic Large.jpeg";
 import hike from "../assets/community/compressed/hike Large.jpeg";
 import mhfinals from "../assets/community/compressed/mhfinals Large.jpeg";
-import michelleToni from "../assets/community/compressed/michelle+toni Large.jpeg";
+// import michelleToni from "../assets/community/compressed/michelle+toni Large.jpeg";
 import prezpitch from "../assets/community/compressed/prezpitch Large.jpeg";
 import shake from "../assets/community/compressed/shake Large.jpeg";
 import table from "../assets/community/compressed/table Large.jpeg";
-import uciUcsd from "../assets/community/compressed/uci+ucsd Large.jpeg";
+// import uciUcsd from "../assets/community/compressed/uci+ucsd Large.jpeg";
 import vnmoderators from "../assets/community/compressed/vnmoderators Large.jpeg";
 import web3mixer from "../assets/community/compressed/web3mixer Large.jpeg";
 
@@ -74,21 +74,11 @@ const images = [
     name: "aifinals",
     title: "aifinals",
   },
-  // {
-  //   image: alphaBeta,
-  //   name: "alpha Beta",
-  //   title: "alpha Beta",
-  // },
   {
     image: alphaog,
     name: "alphaog",
     title: "alphaog",
   },
-  // {
-  //   image: ariyaJess,
-  //   name: "ariya Jess",
-  //   title: "ariya Jess",
-  // },
   {
     image: ball,
     name: "ball",
@@ -164,11 +154,6 @@ const images = [
     name: "mhfinals",
     title: "mhfinals",
   },
-  // {
-  //   image: michelleToni,
-  //   name: "michelle Toni",
-  //   title: "michelle Toni",
-  // },
   {
     image: prezpitch,
     name: "prezpitch",
@@ -184,11 +169,6 @@ const images = [
     name: "table",
     title: "table",
   },
-  // {
-  //   image: uciUcsd,
-  //   name: "uci Ucsd",
-  //   title: "uci Ucsd",
-  // },
   {
     image: vnmoderators,
     name: "vnmoderators",
