@@ -1,5 +1,19 @@
 import React from "react";
 
+<style>
+  {`
+    @keyframes slideBg {
+      from {
+        background-position: -100% 0, 0 0;
+      }
+      to {
+        background-position: 200% 0, 0 0;
+      }
+    }
+  `}
+</style>;
+
+
 export default function Stats() {
   return (
     <div className="sm:h-screen flex flex-col items-center justify-center">

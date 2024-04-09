@@ -104,11 +104,11 @@ const images = [
     name: "check2",
     title: "check2",
   },
-  {
-    image: clareVango,
-    name: "clare Vango",
-    title: "clare Vango",
-  },
+  // {
+  //   image: clareVango,
+  //   name: "clare Vango",
+  //   title: "clare Vango",
+  // },
   {
     image: cookin,
     name: "cookin",
@@ -119,16 +119,16 @@ const images = [
     name: "crescentbros",
     title: "crescentbros",
   },
-  {
-    image: deltaDaniel,
-    name: "delta Daniel",
-    title: "delta Daniel",
-  },
-  {
-    image: deltaRomeo,
-    name: "delta Romeo",
-    title: "delta Romeo",
-  },
+  // {
+  //   image: deltaDaniel,
+  //   name: "delta Daniel",
+  //   title: "delta Daniel",
+  // },
+  // {
+  //   image: deltaRomeo,
+  //   name: "delta Romeo",
+  //   title: "delta Romeo",
+  // },
   {
     image: deltamerch,
     name: "deltamerch",
