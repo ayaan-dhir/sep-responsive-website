@@ -13,7 +13,7 @@ export default function Hero() {
         <div className="md:z-10 z-0">
           <HoverBorderGradient>
             <a
-              href="https://forms.gle/Xsw8naSn5Y52xc3m6"
+              href="https://forms.gle/nqqyqguzc6of3jDz8"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block text-white font-black w-[150px]"

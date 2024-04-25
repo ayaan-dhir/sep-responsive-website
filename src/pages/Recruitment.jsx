@@ -1,7 +1,4 @@
 import React from "react";
-import shreya from "../assets/members/board/shreya.jpg";
-import rise from "../assets/recruitment/rise-banner2.png";
-import schedule from "../assets/recruitment/schedule.png";
 import { HoverBorderGradient } from "../components/ui/hover-border-gradient.tsx";
 
 const Recruitment = () => {
@@ -12,7 +9,7 @@ const Recruitment = () => {
           <div className="md:z-10 z-0">
             <HoverBorderGradient>
               <a
-                href="https://forms.gle/EqRMeY1nV8pLoH7ZA"
+                href="https://forms.gle/nqqyqguzc6of3jDz8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block text-white font-bold text-3xl rounded px-2 py-5 w-[250px]"
