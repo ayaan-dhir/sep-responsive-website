@@ -104,7 +104,7 @@ import { HoverEffect } from "./ui/card-hover-effect";
 
 export default function Stats() {
   return (
-    <div className="max-w-5xl mx-auto px-8">
+    <div className="h-screen flex flex-col items-center justify-center max-w-5xl mx-auto px-8">
       <h1 className="lg:text-6xl text-4xl font-semibold text-center text-gray-800 dark:text-white">
         UCI's Premier Entrepreneurship Fraternity
       </h1>
