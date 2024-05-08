@@ -1,85 +1,112 @@
-import React, {useState} from "react";
-// import bonsai from "../assets/logos/bonsai logo icon.png";
-// import bookit from "../assets/logos/bookit.png";
-// import cartello from "../assets/logos/cartello logo name.png";
-// import clearly from "../assets/logos/clearly logo color.png";
-// import diba from "../assets/logos/diBa logo white.png";
-// import disko from "../assets/logos/disko logo.png";
-// import idefy from "../assets/logos/idefy logo color.png";
-// import lendopoly from "../assets/logos/lendopoly logo with name.png";
-// import lighthouse from "../assets/logos/lighthouse logo yellow.png";
-// import puerta from "../assets/logos/puerta abierta logo.png";
-// import recreate from "../assets/logos/recreate energy logo .png";
-// import redfordstartup from "../assets/logos/redford startup logo.png";
-// import soundsense from "../assets/logos/soundsense logo color.png";
-// import student from "../assets/logos/student inc logo.png";
-// import surplus from "../assets/logos/surplus logo.png";
-// import thrust from "../assets/logos/thrust aeronautics logo color.png";
-// import vango from "../assets/logos/vango.png";
-// import wastewise from "../assets/logos/wastewise logo.png";
+import React from "react";
+import { HeroParallax } from "../components/ui/hero-parallax";
+import bonsai from "../assets/logos/bonsai logo icon.png";
+import bookit from "../assets/logos/bookit.png";
+import cartello from "../assets/logos/cartello logo name.png";
+import clearly from "../assets/logos/clearly logo color.png";
+import diba from "../assets/logos/diBa logo white.png";
+import disko from "../assets/logos/disko logo.png";
+import idefy from "../assets/logos/idefy logo color.png";
+import lendopoly from "../assets/logos/lendopoly logo with name.png";
+import lighthouse from "../assets/logos/lighthouse logo yellow.png";
+import puerta from "../assets/logos/puerta abierta logo.png";
+import recreate from "../assets/logos/recreate energy logo .png";
+import redfordstartup from "../assets/logos/redford startup logo.png";
+import soundsense from "../assets/logos/soundsense logo color.png";
+import student from "../assets/logos/student inc logo.png";
+import surplus from "../assets/logos/surplus logo.png";
+import thrust from "../assets/logos/thrust aeronautics logo color.png";
+import vango from "../assets/logos/vango.png";
+import wastewise from "../assets/logos/wastewise logo.png";
 
-// const logos = [
-//   bonsai,
-//   bookit,
-//   cartello,
-//   clearly,
-//   diba,
-//   disko,
-//   idefy,
-//   lendopoly,
-//   lighthouse,
-//   puerta,
-//   recreate,
-//   redfordstartup,
-//   soundsense,
-//   student,
-//   surplus,
-//   thrust,
-//   vango,
-//   wastewise,
-// ];
+export const products = [
+  {
+    title: "Bonsai",
+    thumbnail: bonsai,
+  },
+  {
+    title: "BookIt",
+    thumbnail: bookit,
+  },
+  {
+    title: "Cartello",
+    thumbnail: cartello,
+  },
+  {
+    title: "Clearly",
+    thumbnail: clearly,
+  },
+  {
+    title: "DiBa",
+    thumbnail: diba,
+  },
+  {
+    title: "Disko",
+    thumbnail: disko,
+  },
+  {
+    title: "iDefy",
+    thumbnail: idefy,
+  },
+  {
+    title: "Lendopoly",
+    thumbnail: lendopoly,
+  },
+  {
+    title: "LightHouse",
+    thumbnail: lighthouse,
+  },
+  {
+    title: "Puerta Abierta",
+    thumbnail: puerta,
+  },
+  {
+    title: "Recreate Energy",
+    thumbnail: recreate,
+  },
+  {
+    title: "Clean",
+    thumbnail: redfordstartup,
+  },
+  {
+    title: "SoundSense",
+    thumbnail: soundsense,
+  },
+  {
+    title: "Student Inc",
+    thumbnail: student,
+  },
+  {
+    title: "Surplus",
+    thumbnail: surplus,
+  },
+  {
+    title: "Thrust Aeronautics",
+    thumbnail: thrust,
+  },
+  {
+    title: "VangoAI",
+    thumbnail: vango,
+  },
+  {
+    title: "WasteWise",
+    thumbnail: wastewise,
+  },
+];
 
-function Startups() { 
 
+export default function Startups() {
   return (
-    <div data-theme="black">
-      <div className="w-[full] h-screen mx-auto text-center flex flex-col justify-center items-center">
-        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-8 sm:py-6 py-6 text-white">
-          Our Startups
+    <>
+      <HeroParallax products={products} />
+      <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
+        <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2 text-white">
+          Over $1M raised
         </h1>
-        <p className="md:text-4xl sm:text-3xl text-2xl font-bold text-slate-300">
-          We love building...
+        <p className="md:text-3xl sm:text-2xl text-xl font-bold text-slate-300">
+          through competitions, accelerators, and investments
         </p>
-        {/* <div className="carousel w-[80%] h-[50%] overflow-hidden justify-center items-center">
-          {logos.map((logo, index) => (
-            <div
-              key={index}
-              className={`carousel-item absolute w-[80%] flex justify-center items-center transition-opacity duration-500 ${
-                index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              <div className="px-12">
-                <img
-                  src={logo}
-                  className="w-[50%] mx-auto h-auto"
-                  alt={`Startup ${index + 1}`}
-                />
-              </div>
-            </div>
-          ))}
-        </div>
-        <input
-          type="range"
-          min={0}
-          max={logos.length - 1}
-          value={currentSlide}
-          onChange={handleSlideChange}
-          className="range range-white w-[80%]"
-        /> */}
       </div>
-    </div>
+    </>
   );
 }
-
-
-export default Startups;
