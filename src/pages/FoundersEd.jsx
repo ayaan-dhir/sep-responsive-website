@@ -46,7 +46,7 @@ function FoundersEducation() {
         </p>
       </div>
       <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
-        <h1 className="text-white md:text-7xl sm:text-6xl text-4xl font-bold md:py-10 sm:py-4 py-2">
+        <h1 className="text-white md:text-7xl sm:text-6xl text-4xl font-bold sm:py-4 py-2">
           Our Curriculum
         </h1>
         <div>

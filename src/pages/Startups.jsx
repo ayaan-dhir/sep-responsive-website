@@ -103,7 +103,7 @@ export default function Startups() {
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2 text-white">
           Over $1M raised
         </h1>
-        <p className="md:text-3xl sm:text-2xl text-xl font-bold text-slate-300">
+        <p className="px-2 md:text-3xl sm:text-2xl text-xl font-bold text-slate-300">
           through competitions, accelerators, and investments
         </p>
       </div>
