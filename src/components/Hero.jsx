@@ -18,7 +18,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="inline-block text-white font-black w-[150px]"
             >
-              Apply Now!
+              Interested?
             </a>
           </HoverBorderGradient>
         </div>

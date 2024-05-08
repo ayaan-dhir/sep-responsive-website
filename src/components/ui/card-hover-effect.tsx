@@ -19,7 +19,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  py-10",
+        "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 py-10",
         className
       )}
     >
@@ -48,7 +48,7 @@ export const HoverEffect = ({
               />
             )}
           </AnimatePresence>
-          <Card>
+          <Card className="flex items-center justify-center">
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
           </Card>
@@ -87,7 +87,7 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn("text-zinc-100 font-bold tracking-wide text-center text-3xl", className)}>
+    <h4 className={cn("text-zinc-100 font-bold tracking-wide text-center md:text-3xl text-2xl", className)}>
       {children}
     </h4>
   );
@@ -103,7 +103,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-3 text-zinc-400 tracking-wide leading-relaxed text-center",
+        "text-zinc-400 tracking-wide leading-relaxed text-center",
         className
       )}
     >

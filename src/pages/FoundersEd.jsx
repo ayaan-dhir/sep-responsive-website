@@ -1,7 +1,19 @@
 import React from "react";
 import ayaan from "../assets/members/alpha/ayaan.jpg";
+import { HoverEffect } from "../components/ui/card-hover-effect";
 
-const curriculumItems = [
+// const curriculumItems = [
+//   { title: "Problem Discovery" },
+//   { title: "Customer Discovery" },
+//   { title: "Minimum Viable Product" },
+//   { title: "Market Analysis" },
+//   { title: "Finance" },
+//   { title: "Branding" },
+//   { title: "Networking" },
+//   { title: "Pitching" },
+// ];
+
+export const curriculumItems = [
   { title: "Problem Discovery" },
   { title: "Customer Discovery" },
   { title: "Minimum Viable Product" },
@@ -11,6 +23,7 @@ const curriculumItems = [
   { title: "Networking" },
   { title: "Pitching" },
 ];
+
 
 function FoundersEducation() {
   return (
@@ -37,16 +50,7 @@ function FoundersEducation() {
           Our Curriculum
         </h1>
         <div>
-          <div className="grid justify-center items-start gap-4 px-5 sm:gap-6 sm:px-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-14 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
-            {curriculumItems.map((item, index) => (
-              <div
-                key={index}
-                className="sm:text-2xl text-l font-medium text-white rounded-[22px] bg-[#4343ff] sm:p-[20px] p-[10px] flex flex-col justify-center sm:h-[120px] h-[90px]"
-              >
-                <div className="title">{item.title}</div>
-              </div>
-            ))}
-          </div>
+          <HoverEffect items={curriculumItems} />
         </div>
       </div>
       <div className="sm:snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
