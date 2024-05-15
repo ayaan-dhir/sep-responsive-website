@@ -44,17 +44,17 @@ import saher from "../assets/members/beta/saher.jpg";
 import shivam from "../assets/members/beta/shivam.jpg";
 
 // Alpha
-import alexia from "../assets/members/alpha/alexia.png";
+import alexia from "../assets/members/alpha/alexia.JPG";
 import ayaan from "../assets/members/alpha/ayaan.jpg";
-import isaac from "../assets/members/alpha/isaac.png";
+import isaac from "../assets/members/alpha/isaac.JPG";
 import michael from "../assets/members/alpha/michael.jpg";
 import rosario from "../assets/members/alpha/rosario.jpg";
-import ruby from "../assets/members/alpha/ruby.png";
+import ruby from "../assets/members/alpha/ruby.JPG";
 
 // Founding
 import danielvega from "../assets/members/founding/danielvega.jpg";
 import marc from "../assets/members/founding/marc.JPG";
-import nikesh from "../assets/members/founding/nikesh.jpg";
+import nikesh from "../assets/members/founding/nikesh.JPG";
 import nolan from "../assets/members/founding/nolan.jpg";
 import stefani from "../assets/members/founding/stefani.JPG";
 
@@ -360,6 +360,7 @@ function Classes() {
               src={member.photo}
               alt={member.name}
               loading="lazy"
+              effect="blur"
               className="w-[300px] h-[400px] rounded-[20px] object-cover"
             />
             <div className="font-normal text-[18pt] mt-[10px] text-white">
