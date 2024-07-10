@@ -1,52 +1,52 @@
 import React from "react";
 import ayaan from "../assets/members/board/ayaan.jpg";
-import byren from "../assets/members/board/byren.jpg";
-import danielyi from "../assets/members/board/daniel.jpg";
-import jessicahu from "../assets/members/epsilon/jessicahu.JPG";
-import shreya from "../assets/members/board/shreya.jpg";
-import rithwik from "../assets/members/board/rithwik.jpg";
+// import byren from "../assets/members/board/byren.jpg";
+// import danielyi from "../assets/members/board/daniel.jpg";
+// import jessicahu from "../assets/members/epsilon/jessicahu.JPG";
+// import shreya from "../assets/members/board/shreya.jpg";
+// import rithwik from "../assets/members/board/rithwik.jpg";
 
 const boardData = [
   {
     id: 1,
     position: "President",
-    name: "Shreya Mawandia",
-    photo: shreya,
-  },
-  {
-    id: 2,
-    position: "VP of External Affairs",
-    name: "Byren Cheema",
-    photo: byren,
-  },
-
-  {
-    id: 3,
-    position: "VP of Internal Affairs",
-    name: "Daniel Yi",
-    photo: danielyi,
-  },
-
-  {
-    id: 4,
-    position: "VP of Technology/Communications",
-    name: "Jessica Hu",
-    photo: jessicahu,
-  },
-
-  {
-    id: 5,
-    position: "VP of Finance",
-    name: "Rithwik Kerur",
-    photo: rithwik,
-  },
-
-  {
-    id: 6,
-    position: "VP of Founder's Education",
     name: "Ayaan Dhir",
     photo: ayaan,
   },
+  // {
+  //   id: 2,
+  //   position: "VP of External Affairs",
+  //   name: "Byren Cheema",
+  //   photo: byren,
+  // },
+
+  // {
+  //   id: 3,
+  //   position: "VP of Internal Affairs",
+  //   name: "Daniel Yi",
+  //   photo: danielyi,
+  // },
+
+  // {
+  //   id: 4,
+  //   position: "VP of Technology/Communications",
+  //   name: "Jessica Hu",
+  //   photo: jessicahu,
+  // },
+
+  // {
+  //   id: 5,
+  //   position: "VP of Finance",
+  //   name: "Rithwik Kerur",
+  //   photo: rithwik,
+  // },
+
+  // {
+  //   id: 6,
+  //   position: "VP of Founder's Education",
+  //   name: "Ayaan Dhir",
+  //   photo: ayaan,
+  // },
 ];
 
 function Board() {
