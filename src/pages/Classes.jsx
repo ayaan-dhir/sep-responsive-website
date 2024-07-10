@@ -1,7 +1,7 @@
 import React from "react";
 
 // Epsilon
-import antonio from "../assets/members/epsilon/antonio.jpg";
+import antonio from "../assets/members/epsilon/antonio.JPG";
 import ariel from "../assets/members/epsilon/ariel.JPG";
 import ariya from "../assets/members/epsilon/ariya.JPG";
 import caleb from "../assets/members/epsilon/caleb.JPG";
