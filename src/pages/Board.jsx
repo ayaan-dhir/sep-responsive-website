@@ -13,12 +13,12 @@ const boardData = [
     photo: ayaan,
   },
 
-  {
-    id: 2,
-    position: "VP of Founder's Education",
-    name: "Undecided",
-    // photo: 
-  },
+  // {
+  //   id: 2,
+  //   position: "VP of Founder's Education",
+  //   name: "Undecided",
+  //   // photo: 
+  // },
 
   {
     id: 3,
