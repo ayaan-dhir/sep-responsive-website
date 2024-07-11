@@ -54,7 +54,7 @@ import ruby from "../assets/members/alpha/ruby.JPG";
 // Founding
 import danielvega from "../assets/members/founding/danielvega.jpg";
 import marc from "../assets/members/founding/marc.JPG";
-import nikesh from "../assets/members/founding/nikesh.JPG";
+import nikesh from "../assets/members/founding/nikesh.jpg";
 import nolan from "../assets/members/founding/nolan.jpg";
 import stefani from "../assets/members/founding/stefani.JPG";
 
