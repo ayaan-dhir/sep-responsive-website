@@ -18,6 +18,8 @@ import surplus from "../assets/logos/surplus logo.png";
 import thrust from "../assets/logos/thrust aeronautics logo color.png";
 import vango from "../assets/logos/vango.png";
 import wastewise from "../assets/logos/wastewise logo.png";
+// import { HoverEffect } from "../components/ui/card-hover-effect";
+
 
 export const products = [
   {

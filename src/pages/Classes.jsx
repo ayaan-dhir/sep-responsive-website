@@ -1,5 +1,12 @@
 import React from "react";
 
+// Zeta
+import hoon from "../assets/members/zeta/hoon.JPG";
+import rohit from "../assets/members/zeta/rohit.JPG";
+import kyle from "../assets/members/zeta/kyle.JPG";
+import yurina from "../assets/members/zeta/yurina.JPG";
+import richard from "../assets/members/zeta/richard.JPG";
+
 // Epsilon
 import antonio from "../assets/members/epsilon/antonio.JPG";
 import ariel from "../assets/members/epsilon/ariel.JPG";
@@ -57,6 +64,38 @@ import marc from "../assets/members/founding/marc.JPG";
 import nikesh from "../assets/members/founding/nikesh.jpg";
 import nolan from "../assets/members/founding/nolan.jpg";
 import stefani from "../assets/members/founding/stefani.JPG";
+
+const zetaData = [
+  {
+    id: 1,
+    name: "Hoon Kim",
+    photo: hoon,
+  },
+
+  {
+    id: 2,
+    name: "Rohit De",
+    photo: rohit,
+  },
+
+  {
+    id: 3,
+    name: "Kyle King",
+    photo: kyle,
+  },
+
+  {
+    id: 4,
+    name: "Yurina Tamura",
+    photo: yurina,
+  },
+
+  {
+    id: 5,
+    name: "Richard Hunt",
+    photo: richard,
+  },
+]
 
 const epsilonData = [
   {
@@ -348,108 +387,125 @@ const foundingData = [
 
 function Classes() {
   return (
-    <div data-theme="black" className="text-center">
-      <h1 className="font-semibold text-[56pt] text-white pt-[96px]">
-        Classes
-      </h1>
-      <h2 className="font-normal text-[40pt] text-white pt-[30px]">Epsilon</h2>
-      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-        {epsilonData.map((member) => (
-          <div key={member.id} className="flex flex-col items-center">
-            <img
-              src={member.photo}
-              alt={member.name}
-              loading="lazy"
-              effect="blur"
-              className="w-[300px] h-[400px] rounded-[20px] object-cover"
-            />
-            <div className="font-normal text-[18pt] mt-[10px] text-white">
-              {member.name}
+      <div data-theme="black" className="text-center">
+        <h1 className="font-semibold text-[56pt] text-white pt-[96px]">
+          Classes
+        </h1>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Zeta</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {zetaData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                effect="blur"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="font-normal text-[40pt] text-white pt-[30px]">Delta</h2>
-      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-        {deltaData.map((member) => (
-          <div key={member.id} className="flex flex-col items-center">
-            <img
-              src={member.photo}
-              alt={member.name}
-              loading="lazy"
-              className="w-[300px] h-[400px] rounded-[20px] object-cover"
-            />
-            <div className="font-normal text-[18pt] mt-[10px] text-white">
-              {member.name}
+          ))}
+        </div>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Epsilon</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {epsilonData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                effect="blur"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="font-normal text-[40pt] text-white pt-[30px]">Gamma</h2>
-      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-        {gammaData.map((member) => (
-          <div key={member.id} className="flex flex-col items-center">
-            <img
-              src={member.photo}
-              alt={member.name}
-              loading="lazy"
-              className="w-[300px] h-[400px] rounded-[20px] object-cover"
-            />
-            <div className="font-normal text-[18pt] mt-[10px] text-white">
-              {member.name}
+          ))}
+        </div>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Delta</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {deltaData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="font-normal text-[40pt] text-white pt-[30px]">Beta</h2>
-      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-        {betaData.map((member) => (
-          <div key={member.id} className="flex flex-col items-center">
-            <img
-              src={member.photo}
-              alt={member.name}
-              loading="lazy"
-              className="w-[300px] h-[400px] rounded-[20px] object-cover"
-            />
-            <div className="font-normal text-[18pt] mt-[10px] text-white">
-              {member.name}
+          ))}
+        </div>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Gamma</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {gammaData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="font-normal text-[40pt] text-white pt-[30px]">Alpha</h2>
-      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-        {alphaData.map((member) => (
-          <div key={member.id} className="flex flex-col items-center">
-            <img
-              src={member.photo}
-              alt={member.name}
-              loading="lazy"
-              className="w-[300px] h-[400px] rounded-[20px] object-cover"
-            />
-            <div className="font-normal text-[18pt] mt-[10px] text-white">
-              {member.name}
+          ))}
+        </div>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Beta</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {betaData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="font-normal text-[40pt] text-white pt-[30px]">Founding</h2>
-      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-        {foundingData.map((member) => (
-          <div key={member.id} className="flex flex-col items-center">
-            <img
-              src={member.photo}
-              alt={member.name}
-              loading="lazy"
-              className="w-[300px] h-[400px] rounded-[20px] object-cover"
-            />
-            <div className="font-normal text-[18pt] mt-[10px] text-white">
-              {member.name}
+          ))}
+        </div>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Alpha</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {alphaData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <h2 className="font-normal text-[40pt] text-white pt-[30px]">Founding</h2>
+        <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+          {foundingData.map((member) => (
+            <div key={member.id} className="flex flex-col items-center">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+              <div className="font-normal text-[18pt] mt-[10px] text-white">
+                {member.name}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
   );
 }
 

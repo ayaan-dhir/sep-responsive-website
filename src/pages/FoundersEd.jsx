@@ -2,17 +2,6 @@ import React from "react";
 import ayaan from "../assets/members/alpha/ayaan.jpg";
 import { HoverEffect } from "../components/ui/card-hover-effect";
 
-// const curriculumItems = [
-//   { title: "Problem Discovery" },
-//   { title: "Customer Discovery" },
-//   { title: "Minimum Viable Product" },
-//   { title: "Market Analysis" },
-//   { title: "Finance" },
-//   { title: "Branding" },
-//   { title: "Networking" },
-//   { title: "Pitching" },
-// ];
-
 export const curriculumItems = [
   { title: "Problem Discovery" },
   { title: "Customer Discovery" },
@@ -23,7 +12,6 @@ export const curriculumItems = [
   { title: "Networking" },
   { title: "Pitching" },
 ];
-
 
 function FoundersEducation() {
   return (
@@ -63,7 +51,7 @@ function FoundersEducation() {
           </div>
           <div className="flex-1 font-normal text-md md:text-xl lg:text-3xl mt-2 lg:mt-0 mx-4 text-left text-slate-300">
             <p>
-              "Hi everyone! My name is Ayaan and I focus on building startups
+              Hi everyone! My name is Ayaan and I focus on building startups
               through our Founder's Education, our program designed to help you
               chase after your entrepreneurial endeavors. Our program is focused
               on collaboration and community as you get to build alongside your
@@ -71,7 +59,7 @@ function FoundersEducation() {
               go on to pursue entrepreneurship full-time and we also have
               members who have started ventures before joining who go on to
               build their next startup. FE is the place where innovators at UCI
-              come to build!"
+              come to build!
             </p>
           </div>
         </div>

@@ -1,10 +1,9 @@
 import React from "react";
 import ayaan from "../assets/members/board/ayaan.jpg";
-// import byren from "../assets/members/board/byren.jpg";
-// import danielyi from "../assets/members/board/daniel.jpg";
-// import jessicahu from "../assets/members/epsilon/jessicahu.JPG";
-// import shreya from "../assets/members/board/shreya.jpg";
-// import rithwik from "../assets/members/board/rithwik.jpg";
+import rohit from "../assets/members/board/rohit.JPG";
+import yurina from "../assets/members/board/yurina.JPG";
+import richard from "../assets/members/board/richard.JPG";
+import caleb from "../assets/members/board/caleb.JPG";
 
 const boardData = [
   {
@@ -13,40 +12,55 @@ const boardData = [
     name: "Ayaan Dhir",
     photo: ayaan,
   },
-  // {
-  //   id: 2,
-  //   position: "VP of External Affairs",
-  //   name: "Byren Cheema",
-  //   photo: byren,
-  // },
 
-  // {
-  //   id: 3,
-  //   position: "VP of Internal Affairs",
-  //   name: "Daniel Yi",
-  //   photo: danielyi,
-  // },
+  {
+    id: 2,
+    position: "VP of Founder's Education",
+    name: "Undecided",
+    // photo: 
+  },
 
-  // {
-  //   id: 4,
-  //   position: "VP of Technology/Communications",
-  //   name: "Jessica Hu",
-  //   photo: jessicahu,
-  // },
+  {
+    id: 3,
+    position: "VP of External Affairs",
+    name: "Jose Callejas",
+    // photo: ,
+  },
 
-  // {
-  //   id: 5,
-  //   position: "VP of Finance",
-  //   name: "Rithwik Kerur",
-  //   photo: rithwik,
-  // },
+  {
+    id: 4,
+    position: "VP of Internal Affairs",
+    name: "Caleb Chung",
+    photo: caleb,
+  },
 
-  // {
-  //   id: 6,
-  //   position: "VP of Founder's Education",
-  //   name: "Ayaan Dhir",
-  //   photo: ayaan,
-  // },
+  {
+    id: 5,
+    position: "VP of Technology",
+    name: "Rohit De",
+    photo: rohit,
+  },
+
+  {
+    id: 6,
+    position: "VP of Finance",
+    name: "Richard Hunt",
+    photo: richard,
+  },
+
+  {
+    id: 7,
+    position: "VP of Recruitment",
+    name: "Yurina Tamura",
+    photo: yurina,
+  },
+
+  {
+    id: 8,
+    position: "VP of Media",
+    name: "Hannah McCarthy",
+    // photo: ,
+  },
 ];
 
 function Board() {
