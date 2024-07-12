@@ -15,8 +15,8 @@ export const curriculumItems = [
 
 function FoundersEducation() {
   return (
-    <div className="sm:overflow-y-scroll sm:snap-mandatory sm:snap-y sm:h-screen">
-      <div className="snap-start flex flex-col mx-auto text-center justify-center items-center h-screen">
+    <div className="overflow-y-auto h-auto">
+      <div className="flex flex-col mx-auto text-center justify-center items-center min-h-screen py-10">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2 text-white">
           Founder's Education
         </h1>
@@ -24,7 +24,7 @@ function FoundersEducation() {
           Our Startup Accelerator
         </p>
       </div>
-      <div className="sm:snap-start flex flex-col mx-auto text-center justify-center items-center w-[90%] h-screen">
+      <div className="flex flex-col mx-auto text-center justify-center items-center w-[90%] min-h-screen py-10">
         <h1 className="md:text-7xl sm:text-6xl text-5xl font-bold md:py-6 sm:py-4 py-2 text-white">
           The Program
         </h1>
@@ -33,7 +33,7 @@ function FoundersEducation() {
           helping you think and build like an entrepreneur.
         </p>
       </div>
-      <div className="sm:snap-start flex flex-col h-screen text-center justify-center items-center sm:w-[80%] m-auto">
+      <div className="flex flex-col min-h-screen text-center justify-center items-center sm:w-[80%] m-auto py-10">
         <h1 className="text-white md:text-7xl sm:text-6xl text-4xl font-bold sm:py-4 py-2">
           Our Curriculum
         </h1>
@@ -41,7 +41,7 @@ function FoundersEducation() {
           <HoverEffect items={curriculumItems} />
         </div>
       </div>
-      <div className="sm:snap-start flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full h-screen text-center">
+      <div className="flex flex-col justify-center items-center mx-auto sm:w-[90%] w-full min-h-screen text-center py-10">
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mt-20 md:mt-20 lg:mt-0 xl:mt-0 w-full max-w-4xl text-white">
           A Note from Our FE
         </h1>

@@ -7,7 +7,8 @@ const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSubDropdownOpen, setIsSubDropdownOpen] = useState(false);
-  const [navbarDark, setNavbarDark] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [showNavbar, setShowNavbar] = useState(true);
 
   const handleNav = () => {
     setNav(!nav);
@@ -31,34 +32,25 @@ const Navbar = () => {
     setIsSubDropdownOpen(false);
   };
 
+  const controlNavbar = () => {
+    if (window.scrollY > lastScrollY) {
+      setShowNavbar(false);
+    } else {
+      setShowNavbar(true);
+    }
+    setLastScrollY(window.scrollY);
+  };
+
   useEffect(() => {
-    let timeoutId = null;
-
-    const handleScroll = () => {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-
-      setNavbarDark(true);
-
-      timeoutId = setTimeout(() => {
-        setNavbarDark(false);
-      }, 750);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener('scroll', controlNavbar);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
+      window.removeEventListener('scroll', controlNavbar);
     };
-  }, []);
+  }, [lastScrollY]);
 
-  const navbarStyles = navbarDark
-    ? { backgroundColor: "rgba(0, 0, 0, 0.8)" }
-    : { backgroundColor: "transparent" };
+  const navbarStyles = showNavbar
+    ? { transform: 'translateY(0)', transition: 'transform 0.3s ease-in-out', backgroundColor: 'transparent' }
+    : { transform: 'translateY(-100%)', transition: 'transform 0.3s ease-in-out', backgroundColor: 'transparent' };
 
   const textColorClass = (bgColor) => {
     const darkColors = ["black", "#4343ff"];
@@ -68,7 +60,7 @@ const Navbar = () => {
   return (
     <div
       data-theme="business"
-      className="flex justify-between items-center h-24 mx-auto px-6 fixed w-full z-50 transition-all"
+      className="flex justify-between items-center h-24 mx-auto px-6 fixed w-full z-50"
       style={navbarStyles}
     >
       <Link
@@ -103,7 +95,7 @@ const Navbar = () => {
                 >
                   <button>Classes</button>
                   {isSubDropdownOpen && (
-                    <div className="absolute left-full top-0 w-[120px] bg-white">
+                    <div className="absolute top-full left-0 w-[120px] bg-white">
                       <ul>
                         {["Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"].map((className) => (
                           <li key={className} className={`px-4 py-2 hover:bg-[#4343ff] ${textColorClass("white")} hover:${textColorClass("#4343ff")}`}>
