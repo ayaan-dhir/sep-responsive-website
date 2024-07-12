@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSubDropdownOpen, setIsSubDropdownOpen] = useState(false);
   const [navbarDark, setNavbarDark] = useState(false);
 
   const handleNav = () => {
@@ -15,13 +16,21 @@ const Navbar = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
+  const toggleSubDropdown = () => {
+    setIsSubDropdownOpen(!isSubDropdownOpen);
+  };
+
   const closeNav = () => {
     setNav(false);
     setIsDropdownOpen(false); // Also close the dropdown when closing the nav
+    setIsSubDropdownOpen(false); // Also close the sub-dropdown
   };
 
   const showDropdown = () => setIsDropdownOpen(true);
   const hideDropdown = () => setIsDropdownOpen(false);
+
+  const showSubDropdown = () => setIsSubDropdownOpen(true);
+  const hideSubDropdown = () => setIsSubDropdownOpen(false);
 
   const dropdownOpenStyle = {
     transform: isDropdownOpen ? "translateY(50px)" : "none",
@@ -94,10 +103,25 @@ const Navbar = () => {
                     Board
                   </Link>
                 </li>
-                <li className="px-4 py-2 bg-white hover:bg-[#4343ff] hover:text-white text-black">
-                  <Link to="/members/classes" onClick={closeNav}>
-                    Classes
-                  </Link>
+                <li
+                  className="px-4 py-2 bg-white hover:bg-[#4343ff] hover:text-white text-black relative"
+                  onMouseEnter={showSubDropdown}
+                  onMouseLeave={hideSubDropdown}
+                >
+                  <button>Classes</button>
+                  {isSubDropdownOpen && (
+                    <div className="absolute left-full top-0 w-[120px]">
+                      <ul>
+                        {["Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"].map((className) => (
+                          <li key={className} className="px-4 py-2 bg-white hover:bg-[#4343ff] hover:text-white text-black">
+                            <Link to={`/members/classes/${className.toLowerCase()}`} onClick={closeNav}>
+                              {className}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </li>
               </ul>
             </div>
@@ -148,10 +172,21 @@ const Navbar = () => {
                       Board
                     </Link>
                   </li>
-                  <li className="px-4 py-2 hover:bg-primary hover:text-white">
-                    <Link to="/members/classes" onClick={closeNav}>
-                      Classes
-                    </Link>
+                  <li className="px-4 py-2 hover:bg-primary hover:text-white relative">
+                    <button onClick={toggleSubDropdown}>Classes</button>
+                    {isSubDropdownOpen && (
+                      <div className="absolute left-full top-0 w-[120px] bg-white">
+                        <ul>
+                          {["Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"].map((className) => (
+                            <li key={className} className="px-4 py-2 hover:bg-primary hover:text-white">
+                              <Link to={`/members/classes/${className.toLowerCase()}`} onClick={closeNav}>
+                                {className}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </li>
                 </ul>
               </div>

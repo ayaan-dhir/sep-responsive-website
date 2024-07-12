@@ -5,10 +5,16 @@ import Hero from "./components/Hero";
 import Stats from "./components/Stats";
 import Startups from "./pages/Startups";
 import Board from "./pages/Board";
-import Classes from "./pages/Classes";
 import FoundersEducation from "./pages/FoundersEd";
 import Recruitment from "./pages/Recruitment";
 import Community from "./pages/Community";
+import Zeta from "./pages/Zeta"
+import Epsilon from "./pages/Epsilon"
+import Delta from "./pages/Delta"
+import Gamma from "./pages/Gamma"
+import Beta from "./pages/Beta"
+import Alpha from "./pages/Alpha"
+import Founding from "./pages/Founding"
 import { useLocation } from "react-router-dom";
 
 // ScrollToTop component
@@ -41,7 +47,13 @@ function App() {
           />
           <Route path="/startups" element={<Startups />} />
           <Route path="/members/board" element={<Board />} />
-          <Route path="/members/classes" element={<Classes />} />
+          <Route path="/members/classes/zeta" element={<Zeta />} />
+          <Route path="/members/classes/epsilon" element={<Epsilon />} />
+          <Route path="/members/classes/delta" element={<Delta />} />
+          <Route path="/members/classes/gamma" element={<Gamma />} />
+          <Route path="/members/classes/beta" element={<Beta />} />
+          <Route path="/members/classes/alpha" element={<Alpha />} />
+          <Route path="/members/classes/founding" element={<Founding />} />
           <Route path="/founders-education" element={<FoundersEducation />} />
           <Route path="/recruitment" element={<Recruitment />} />
         </Routes>
