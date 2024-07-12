@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import seplogo from '../assets/logos/sep_white.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -72,18 +73,17 @@ const Navbar = () => {
     >
       <Link
         to="/"
-        className="w-auto text-3xl font-bold text-white flex items-center"
-        style={{ whiteSpace: "nowrap" }}
+        className="flex items-center h-full"
         onClick={closeNav}
       >
-        Sigma Eta Pi
+        <img src={seplogo} alt="Sigma Eta Pi" className="h-full" />
       </Link>
-      <ul className="hidden md:flex text-white items-center">
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+      <ul className="hidden md:flex text-white items-center h-full">
+        <li className="flex items-center h-full px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/startups">Startups</Link>
         </li>
         <li
-          className="relative px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
+          className="relative flex items-center h-full px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
           onMouseEnter={() => setIsDropdownOpen(true)}
           onMouseLeave={() => setIsDropdownOpen(false)}
         >
@@ -120,10 +120,10 @@ const Navbar = () => {
             </div>
           )}
         </li>
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+        <li className="flex items-center h-full px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/founders-education">Founder's Education</Link>
         </li>
-        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
+        <li className="flex items-center h-full px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/recruitment">Recruitment</Link>
         </li>
       </ul>
