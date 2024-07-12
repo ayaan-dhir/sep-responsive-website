@@ -10,6 +10,10 @@ const Navbar = () => {
 
   const handleNav = () => {
     setNav(!nav);
+    if (nav) {
+      setIsDropdownOpen(false);
+      setIsSubDropdownOpen(false);
+    }
   };
 
   const toggleDropdown = () => {
@@ -22,66 +26,56 @@ const Navbar = () => {
 
   const closeNav = () => {
     setNav(false);
-    setIsDropdownOpen(false); // Also close the dropdown when closing the nav
-    setIsSubDropdownOpen(false); // Also close the sub-dropdown
-  };
-
-  const showDropdown = () => setIsDropdownOpen(true);
-  const hideDropdown = () => setIsDropdownOpen(false);
-
-  const showSubDropdown = () => setIsSubDropdownOpen(true);
-  const hideSubDropdown = () => setIsSubDropdownOpen(false);
-
-  const dropdownOpenStyle = {
-    transform: isDropdownOpen ? "translateY(50px)" : "none",
-    transition: "transform 0.3s ease", // Optional: adds a smooth transition
+    setIsDropdownOpen(false);
+    setIsSubDropdownOpen(false);
   };
 
   useEffect(() => {
     let timeoutId = null;
 
     const handleScroll = () => {
-      // If there's a timeout in progress, clear it to reset the timer
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
 
-      // Immediately set navbar to dark upon scrolling
       setNavbarDark(true);
 
-      // Set a timeout to change the navbar back to transparent after 150ms of no scrolling
       timeoutId = setTimeout(() => {
         setNavbarDark(false);
-      }, 750); // Adjust the delay as needed
+      }, 750);
     };
 
     window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      // Clear the timeout when the component is unmounted to prevent memory leaks
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
     };
   }, []);
 
-  // Conditional style based on navbarDark state
   const navbarStyles = navbarDark
-    ? { backgroundColor: "black" }
-    : { backgroundColor: "black" };
+    ? { backgroundColor: "rgba(0, 0, 0, 0.8)" }
+    : { backgroundColor: "transparent" };
+
+  const textColorClass = (bgColor) => {
+    // Returns 'text-white' if background color is dark, otherwise 'text-black'
+    const darkColors = ["black", "#4343ff"]; // Add more dark colors as needed
+    return darkColors.includes(bgColor) ? "text-white" : "text-black";
+  };
 
   return (
     <div
       data-theme="business"
-      className="flex justify-between items-center h-24 mx-auto px-6 fixed inset-0 z-50"
+      className="flex justify-between items-center h-24 mx-auto px-6 fixed w-full z-50 transition-all"
       style={navbarStyles}
     >
       <Link
         to="/"
         className="w-full text-3xl font-bold text-white"
         style={{ whiteSpace: "nowrap" }}
-        onClick={closeNav} // Close nav when clicking on the logo/home link
+        onClick={closeNav}
       >
         Sigma Eta Pi
       </Link>
@@ -91,29 +85,29 @@ const Navbar = () => {
         </li>
         <li
           className="relative px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
-          onMouseEnter={showDropdown}
-          onMouseLeave={hideDropdown}
+          onMouseEnter={() => setIsDropdownOpen(true)}
+          onMouseLeave={() => setIsDropdownOpen(false)}
         >
           <button>Members</button>
           {isDropdownOpen && (
-            <div className="text-center absolute left-1/2 transform -translate-x-1/2 w-[120px]">
+            <div className="absolute bg-white text-black text-center w-[120px]">
               <ul>
-                <li className="px-4 py-2 bg-white hover:bg-[#4343ff] hover:text-white text-black">
+                <li className={`px-4 py-2 hover:bg-[#4343ff] ${textColorClass("white")} hover:${textColorClass("#4343ff")}`}>
                   <Link to="/members/board" onClick={closeNav}>
                     Board
                   </Link>
                 </li>
                 <li
-                  className="px-4 py-2 bg-white hover:bg-[#4343ff] hover:text-white text-black relative"
-                  onMouseEnter={showSubDropdown}
-                  onMouseLeave={hideSubDropdown}
+                  className={`px-4 py-2 hover:bg-[#4343ff] ${textColorClass("white")} hover:${textColorClass("#4343ff")} relative`}
+                  onMouseEnter={() => setIsSubDropdownOpen(true)}
+                  onMouseLeave={() => setIsSubDropdownOpen(false)}
                 >
                   <button>Classes</button>
                   {isSubDropdownOpen && (
-                    <div className="absolute left-full top-0 w-[120px]">
+                    <div className="absolute left-full top-0 w-[120px] bg-white">
                       <ul>
                         {["Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"].map((className) => (
-                          <li key={className} className="px-4 py-2 bg-white hover:bg-[#4343ff] hover:text-white text-black">
+                          <li key={className} className={`px-4 py-2 hover:bg-[#4343ff] ${textColorClass("white")} hover:${textColorClass("#4343ff")}`}>
                             <Link to={`/members/classes/${className.toLowerCase()}`} onClick={closeNav}>
                               {className}
                             </Link>
@@ -127,10 +121,7 @@ const Navbar = () => {
             </div>
           )}
         </li>
-        <li
-          className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl"
-          style={{ whiteSpace: "nowrap" }}
-        >
+        <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/founders-education">Founder's Education</Link>
         </li>
         <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
@@ -139,46 +130,48 @@ const Navbar = () => {
       </ul>
       <div
         onClick={handleNav}
-        className="block md:hidden"
-        style={{ zIndex: 2, position: "relative" }}
+        className="block md:hidden cursor-pointer z-50"
       >
         {nav ? (
-          <AiOutlineClose size={20} color="black" />
+          <AiOutlineClose size={30} color="white" />
         ) : (
-          <AiOutlineMenu size={20} color="white" />
+          <AiOutlineMenu size={30} color="white" />
         )}
       </div>
       <div
         className={
           nav
-            ? "fixed right-0 top-0 w-[60%] h-full border-l border-gray bg-white ease-in-out duration-500"
-            : "fixed right-[-100%] top-0 w-[50%] h-full border-l border-gray bg-white ease-in-out duration-500"
+            ? "fixed right-0 top-0 w-[60%] h-full bg-black text-white ease-in-out duration-500"
+            : "fixed right-[-100%] top-0 w-[60%] h-full bg-black text-white ease-in-out duration-500"
         }
-        style={{ zIndex: 1 }}
       >
-        <ul className="pt-6 text-[#202020]">
-          <li className="p-4">
+        <ul className="pt-6">
+          <li className="p-4 border-b border-gray-600">
             <Link to="/startups" onClick={closeNav}>
               Startups
             </Link>
           </li>
-          <li className="p-4">
-            <button onClick={toggleDropdown}>Members</button>
+          <li className="p-4 border-b border-gray-600">
+            <button onClick={toggleDropdown} className="w-full text-left">
+              Members
+            </button>
             {isDropdownOpen && (
-              <div className="absolute w-40 text-primary">
+              <div className="text-white">
                 <ul>
-                  <li className="px-4 py-2 hover:bg-primary hover:text-white">
+                  <li className={`px-4 py-2 border-b border-gray-600 hover:bg-primary hover:text-white`}>
                     <Link to="/members/board" onClick={closeNav}>
                       Board
                     </Link>
                   </li>
-                  <li className="px-4 py-2 hover:bg-primary hover:text-white relative">
-                    <button onClick={toggleSubDropdown}>Classes</button>
+                  <li className={`px-4 py-2 border-b border-gray-600 hover:bg-primary hover:text-white relative`}>
+                    <button onClick={toggleSubDropdown} className="w-full text-left">
+                      Classes
+                    </button>
                     {isSubDropdownOpen && (
-                      <div className="absolute left-full top-0 w-[120px] bg-white">
+                      <div className="bg-black text-white">
                         <ul>
                           {["Zeta", "Epsilon", "Delta", "Gamma", "Beta", "Alpha", "Founding"].map((className) => (
-                            <li key={className} className="px-4 py-2 hover:bg-primary hover:text-white">
+                            <li key={className} className={`px-4 py-2 border-b border-gray-600 hover:bg-primary hover:text-white`}>
                               <Link to={`/members/classes/${className.toLowerCase()}`} onClick={closeNav}>
                                 {className}
                               </Link>
@@ -192,19 +185,12 @@ const Navbar = () => {
               </div>
             )}
           </li>
-          <li
-            className="p-4"
-            style={{ whiteSpace: "nowrap", ...dropdownOpenStyle }}
-          >
-            <Link
-              to="/founders-education"
-              style={dropdownOpenStyle}
-              onClick={closeNav}
-            >
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/founders-education" onClick={closeNav}>
               Founder's Education
             </Link>
           </li>
-          <li className="p-4" style={dropdownOpenStyle}>
+          <li className="p-4">
             <Link to="/recruitment" onClick={closeNav}>
               Recruitment
             </Link>
