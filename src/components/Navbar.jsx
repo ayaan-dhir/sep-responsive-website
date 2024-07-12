@@ -60,8 +60,7 @@ const Navbar = () => {
     : { backgroundColor: "transparent" };
 
   const textColorClass = (bgColor) => {
-    // Returns 'text-white' if background color is dark, otherwise 'text-black'
-    const darkColors = ["black", "#4343ff"]; // Add more dark colors as needed
+    const darkColors = ["black", "#4343ff"];
     return darkColors.includes(bgColor) ? "text-white" : "text-black";
   };
 
@@ -73,13 +72,13 @@ const Navbar = () => {
     >
       <Link
         to="/"
-        className="w-full text-3xl font-bold text-white"
+        className="w-auto text-3xl font-bold text-white flex items-center"
         style={{ whiteSpace: "nowrap" }}
         onClick={closeNav}
       >
         Sigma Eta Pi
       </Link>
-      <ul className="hidden md:flex text-white">
+      <ul className="hidden md:flex text-white items-center">
         <li className="px-1 sm:px-2 md:px-4 lg:px-6 text-xl">
           <Link to="/startups">Startups</Link>
         </li>
@@ -90,7 +89,7 @@ const Navbar = () => {
         >
           <button>Members</button>
           {isDropdownOpen && (
-            <div className="absolute bg-white text-black text-center w-[120px]">
+            <div className="absolute left-1/2 transform -translate-x-1/2 bg-white text-black text-center w-[120px]">
               <ul>
                 <li className={`px-4 py-2 hover:bg-[#4343ff] ${textColorClass("white")} hover:${textColorClass("#4343ff")}`}>
                   <Link to="/members/board" onClick={closeNav}>
