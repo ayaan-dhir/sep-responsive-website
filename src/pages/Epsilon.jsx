@@ -15,103 +15,106 @@ import pahel from "../assets/members/epsilon/pahel.JPG";
 import samantha from "../assets/members/epsilon/samantha.JPG";
 
 const epsilonData = [
-    {
-      id: 1,
-      name: "Antonio Li",
-      photo: antonio,
-    },
-  
-    {
-      id: 2,
-      name: "Ariel Tjandra",
-      photo: ariel,
-    },
-  
-    {
-      id: 3,
-      name: "Ariya Gowda",
-      photo: ariya,
-    },
-  
-    {
-      id: 4,
-      name: "Caleb Chung",
-      photo: caleb,
-    },
-  
-    {
-      id: 5,
-      name: "Delphine Tai-Beauchamp",
-      photo: delphine,
-    },
-  
-    {
-      id: 6,
-      name: "Elisa Yan",
-      photo: elisa,
-    },
-  
-    {
-      id: 7,
-      name: "Felix Toffaneto-Werner",
-      photo: felix,
-    },
-  
-    {
-      id: 8,
-      name: "Jessica Hu",
-      photo: jessicahu,
-    },
-  
-    {
-      id: 9,
-      name: "Jessica Tam",
-      photo: jessicatam,
-    },
-  
-    {
-      id: 10,
-      name: "Joseph Marquez",
-      photo: joseph,
-    },
-  
-    {
-      id: 11,
-      name: "Pahel Srivastava",
-      photo: pahel,
-    },
-  
-    {
-      id: 12,
-      name: "Samantha Gibbons",
-      photo: samantha,
-    },
-  ];
+  {
+    id: 1,
+    name: "Antonio Li",
+    photo: antonio,
+    link: "https://www.linkedin.com/in/antonioli1/",
+  },
+  {
+    id: 2,
+    name: "Ariel Tjandra",
+    photo: ariel,
+    link: "https://www.linkedin.com/in/ariel-tjandra/",
+  },
+  {
+    id: 3,
+    name: "Ariya Gowda",
+    photo: ariya,
+    link: "https://www.linkedin.com/in/ariya-gowda-b20485225/",
+  },
+  {
+    id: 4,
+    name: "Caleb Chung",
+    photo: caleb,
+    link: "https://www.linkedin.com/in/caleb-chung-7796941a0/",
+  },
+  {
+    id: 5,
+    name: "Delphine Tai-Beauchamp",
+    photo: delphine,
+    link: "https://www.linkedin.com/in/delphinetb/",
+  },
+  {
+    id: 6,
+    name: "Elisa Yan",
+    photo: elisa,
+    link: "https://www.linkedin.com/in/elisa-yan-150852234/",
+  },
+  {
+    id: 7,
+    name: "Felix Toffaneto-Werner",
+    photo: felix,
+    link: "https://www.linkedin.com/in/felixtwerner/",
+  },
+  {
+    id: 8,
+    name: "Jessica Hu",
+    photo: jessicahu,
+    link: "https://www.linkedin.com/in/jessica-hu-a85557276/",
+  },
+  {
+    id: 9,
+    name: "Jessica Tam",
+    photo: jessicatam,
+    link: "https://www.linkedin.com/in/jessica-tam-704240281",
+  },
+  {
+    id: 10,
+    name: "Joseph Marquez",
+    photo: joseph,
+    link: "https://www.linkedin.com/in/joseph-marquez-6009a2262/",
+  },
+  {
+    id: 11,
+    name: "Pahel Srivastava",
+    photo: pahel,
+    link: "https://www.linkedin.com/in/pahel-srivastava/",
+  },
+  {
+    id: 12,
+    name: "Samantha Gibbons",
+    photo: samantha,
+    link: "https://www.linkedin.com/in/samantha-gibbons-395b40294/",
+  },
+];
 
-  function Epsilon() {
-    return (
-        <div data-theme="black" className="text-center">
-          <h1 className="font-semibold text-[56pt] text-white pt-[96px]">
-          Epsilon
-          </h1>
-          <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
-            {epsilonData.map((member) => (
-              <div key={member.id} className="flex flex-col items-center">
-                <img
-                  src={member.photo}
-                  alt={member.name}
-                  loading="lazy"
-                  effect="blur"
-                  className="w-[300px] h-[400px] rounded-[20px] object-cover"
-                />
-                <div className="font-normal text-[18pt] mt-[10px] text-white">
-                  {member.name}
-                </div>
-              </div>
-            ))}
+function Epsilon() {
+  return (
+    <div data-theme="black" className="text-center">
+      <h1 className="font-semibold text-[56pt] text-white pt-[96px]">
+        Epsilon
+      </h1>
+      <div className="grid justify-center grid-cols-[repeat(auto-fill,minmax(250px,1fr))] lg:gap-x-[150px] lg:gap-y-[100px] gap-[100px] pl-[100px] pr-[100px] pt-[30px] pb-[50px]">
+        {epsilonData.map((member) => (
+          <div key={member.id} className="flex flex-col items-center">
+            <a href={member.link} target="_blank" rel="noopener noreferrer">
+              <img
+                src={member.photo}
+                alt={member.name}
+                loading="lazy"
+                effect="blur"
+                className="w-[300px] h-[400px] rounded-[20px] object-cover"
+              />
+            </a>
+            <div className="font-normal text-[18pt] mt-[10px] text-white">
+              {member.name}
+            </div>
           </div>
-          </div>
-    );
-  }
-  
-  export default Epsilon;
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Epsilon;
