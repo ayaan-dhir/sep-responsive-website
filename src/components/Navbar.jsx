@@ -87,9 +87,9 @@ const Navbar = () => {
           onMouseEnter={() => setIsDropdownOpen(true)}
           onMouseLeave={() => setIsDropdownOpen(false)}
         >
-          <button>Members</button>
+          <button className="relative z-10">Members</button>
           {isDropdownOpen && (
-            <div className="absolute left-1/2 transform -translate-x-1/2 bg-white text-black text-center w-[120px]">
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 bg-white text-black text-center w-[120px]">
               <ul>
                 <li className={`px-4 py-2 hover:bg-[#4343ff] ${textColorClass("white")} hover:${textColorClass("#4343ff")}`}>
                   <Link to="/members/board" onClick={closeNav}>
