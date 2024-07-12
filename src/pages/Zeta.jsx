@@ -6,6 +6,7 @@ import rohit from "../assets/members/zeta/rohit.JPG";
 import kyle from "../assets/members/zeta/kyle.JPG";
 import yurina from "../assets/members/zeta/yurina.JPG";
 import richard from "../assets/members/zeta/richard.JPG";
+import jose from "../assets/members/zeta/jose.JPG";
 
 const zetaData = [
   {
@@ -36,6 +37,12 @@ const zetaData = [
     id: 5,
     name: "Richard Hunt",
     photo: richard,
+  },
+
+  {
+    id: 6,
+    name: "Jose Callejas",
+    photo: jose,
   },
 ]
 

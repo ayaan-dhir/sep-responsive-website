@@ -4,6 +4,8 @@ import rohit from "../assets/members/board/rohit.JPG";
 import yurina from "../assets/members/board/yurina.JPG";
 import richard from "../assets/members/board/richard.JPG";
 import caleb from "../assets/members/board/caleb.JPG";
+import jose from "../assets/members/board/jose.JPG";
+
 
 const boardData = [
   {
@@ -24,7 +26,7 @@ const boardData = [
     id: 3,
     position: "VP of External Affairs",
     name: "Jose Callejas",
-    // photo: ,
+    photo: jose,
   },
 
   {
