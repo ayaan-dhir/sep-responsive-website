@@ -52,7 +52,7 @@ const boardData = [
 
   {
     id: 8,
-    position: "VP of Media",
+    position: "VP of Marketing",
     name: "Hannah McCarthy",
     // photo: ,
   },
