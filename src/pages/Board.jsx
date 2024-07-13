@@ -5,6 +5,7 @@ import yurina from "../assets/members/board/yurina.JPG";
 import richard from "../assets/members/board/richard.JPG";
 import caleb from "../assets/members/board/caleb.JPG";
 import jose from "../assets/members/board/jose.JPG";
+import hannah from "../assets/members/board/hannah.JPG";
 
 
 const boardData = [
@@ -54,7 +55,7 @@ const boardData = [
     id: 8,
     position: "VP of Marketing",
     name: "Hannah McCarthy",
-    // photo: ,
+    photo: hannah,
   },
 ];
 
