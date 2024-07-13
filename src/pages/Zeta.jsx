@@ -7,6 +7,9 @@ import kyle from "../assets/members/zeta/kyle.JPG";
 import yurina from "../assets/members/zeta/yurina.JPG";
 import richard from "../assets/members/zeta/richard.JPG";
 import jose from "../assets/members/zeta/jose.JPG";
+import becca from "../assets/members/zeta/becca.JPG";
+import hannah from "../assets/members/zeta/hannah.JPG";
+
 
 const zetaData = [
   {
@@ -50,6 +53,20 @@ const zetaData = [
     photo: jose,
     link: "https://www.linkedin.com/in/jose-mizraim-callejas-gonzalez-371987212/",
   },
+  {
+    id: 7,
+    name: "Becca Sakoda",
+    photo: becca,
+    link: "https://www.linkedin.com/in/rebeccasakoda/",
+  },
+  {
+    id: 8,
+    name: "Hannah McCarthy",
+    photo: hannah,
+    link: "https://www.linkedin.com/in/hannah-mccarthy-6101a22ba/",
+  },
+
+  
 ];
 
 function Zeta() {
