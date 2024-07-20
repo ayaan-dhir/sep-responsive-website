@@ -13,6 +13,8 @@ yarn start
 
 http://localhost:3000 to view in browser
 
+### Don't use npm, only use yarn
+
 
 # Getting Started with Create React App
 
