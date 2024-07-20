@@ -1,3 +1,19 @@
+# Running local host
+
+At the project's root folder, run:
+
+```
+rm -rf node_modules
+rm -rf yarn.lock
+yarn install
+yarn upgrade
+yarn
+yarn start
+```
+
+http://localhost:3000 to view in browser
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
