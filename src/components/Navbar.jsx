@@ -60,7 +60,7 @@ const Navbar = () => {
   return (
     <div
       data-theme="business"
-      className="flex justify-between items-center h-24 mx-auto px-6 fixed w-full z-50"
+      className="flex justify-between items-center h-14 mx-auto px-9 fixed w-full z-50"
       style={navbarStyles}
     >
       <Link
