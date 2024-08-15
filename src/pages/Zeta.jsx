@@ -9,6 +9,7 @@ import richard from "../assets/members/zeta/richard.JPG";
 import jose from "../assets/members/zeta/jose.JPG";
 import becca from "../assets/members/zeta/becca.JPG";
 import hannah from "../assets/members/zeta/hannah.JPG";
+import gaby from "../assets/members/zeta/gaby.JPG";
 
 
 const zetaData = [
@@ -65,6 +66,12 @@ const zetaData = [
     photo: hannah,
     link: "https://www.linkedin.com/in/hannah-mccarthy-6101a22ba/",
   },
+  {
+    id: 9,
+    name: "Gaby Palar",
+    photo: gaby,
+    link: "https://www.linkedin.com/in/gabrielle-palar/",
+  }
 
   
 ];
